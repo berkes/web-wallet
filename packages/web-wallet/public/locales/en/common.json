@@ -219,6 +219,7 @@
   "credentials_overview_action_add_credential": "Add new credential",
   "unknown_label": "Unknown",
   "credential_issuance_method_qr_code_label": "QR-code",
+  "credential_issuance_method_wallet_url_label": "Wallet-URL",
   "credential_issuance_column_card_label": "Card",
   "credential_issuance_column_credential_information_label": "Credential information",
   "credential_issuance_column_issue_method_label": "Issue type",
