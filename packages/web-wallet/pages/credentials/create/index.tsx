@@ -35,6 +35,11 @@ const CredentialsCreatePage: FC = () => {
     console.log('submit qr clicked')
   }
 
+  const onSubmitUrl = async (walletUrl:string): Promise<void> => {
+    console.log('send to wallet', walletUrl)
+    window.open(walletUrl, '_blank');
+  }
+
   const generateQr = async (): Promise<QRValueResult> => {
     if (!credentialType?.schema) {
       throw Error(`No credential schema present`)
@@ -54,7 +59,7 @@ const CredentialsCreatePage: FC = () => {
   return (
     <div className={style.container}>
       {showCredentialQRCodeModal && <QRCodeModal qrValueGenerator={generateQr} onClose={onCloseCredentialQRCodeModal} onSubmit={onSubmitQr} />}
-      {showCredentialWalletUrlModal && <WalletURLModal qrValueGenerator={generateQr} onClose={onCloseCredentialWalletUrlModal} onSubmit={onSubmitQr} />}
+      {showCredentialWalletUrlModal && <WalletURLModal qrValueGenerator={generateQr} onClose={onCloseCredentialWalletUrlModal} onSubmit={onSubmitUrl} />}
       <PageHeaderBar path={translate('issue_credential_path_label')} />
       <div className={style.contentContainer}>
         <div className={style.outletContainer}>

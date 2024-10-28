@@ -97,11 +97,11 @@
 .formButtonsContainer {
     position: absolute;
     display: flex;
-    margin-top: 500px;
+    margin-top: 600px;
     flex-direction: row;
 }
 
-.qrCode {
+.urlContainer {
     position: absolute;
-    margin-top: 50px;
+    width: 40%;
 }
