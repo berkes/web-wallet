@@ -30,7 +30,8 @@ import {
   AUTHENTICATION_STRATEGY,
   AUTHORIZATION_ENABLED,
   AUTHORIZATION_GLOBAL_REQUIRE_USER_IN_ROLES,
-  DB_CONNECTION_NAME,
+  DB_CONNECTION_NAME, 
+  DB_DATABASE_NAME,
   DB_ENCRYPTION_KEY,
   DEFAULT_MODE,
   DEFAULT_X5C,
@@ -41,6 +42,7 @@ import {
   IS_JWKS_HOSTING_ENABLED,
   IS_OID4VCI_ENABLED,
   IS_OID4VP_ENABLED,
+  IS_STATUS_LIST_ENABLED,
   IS_VC_API_ENABLED,
   OID4VCI_API_BASE_URL,
   OID4VP_DEFINITIONS,
@@ -104,6 +106,7 @@ import {animoFunkeCert, funkeTestCA, sphereonCA} from './trustanchors'
 import {MDLMdoc} from '@sphereon/ssi-sdk.mdl-mdoc'
 import {DataSources} from '@sphereon/ssi-sdk.agent-config'
 import {StatusListPlugin} from '@sphereon/ssi-sdk.vc-status-list-issuer/dist/agent/StatusListPlugin'
+import {getOrCreateConfiguredStatusList} from './utils/statuslist'
 
 /**
  * Lets setup supported DID resolvers first
@@ -219,6 +222,8 @@ const agent = createAgent<TAgentTypes>({
 export default agent
 export const context: IAgentContext<TAgentTypes> = { agent }
 
+let defaultDID: string | undefined
+let defaultKid: string | undefined
 if (!cliMode) {
   /**
    * Import/creates DIDs from configurations files and environment. They then get stored in the database.
@@ -228,11 +233,11 @@ if (!cliMode) {
   await getOrCreateDIDWebFromEnv().catch((e) => console.log(`ERROR env: ${e}`))
   await getOrCreateIdentifiersFromFS().catch((e) => console.log(`ERROR dids: ${e}`))
 
-  const defaultDID = await getDefaultDID()
+  defaultDID = await getDefaultDID()
   if (defaultDID) {
     console.log(`[DID] default DID: ${defaultDID}`)
   }
-  const defaultKid = await getDefaultKeyRef({ did: defaultDID })
+  defaultKid = await getDefaultKeyRef({ did: defaultDID })
   console.log(`[DID] default key identifier: ${defaultKid}`)
   if ((DEFAULT_MODE.toLowerCase() === 'did' && !defaultDID) || !defaultKid) {
     console.warn('[DID] Agent has no default DID and Key Identifier!')
@@ -242,6 +247,9 @@ if (!cliMode) {
   if (oid4vpOpts && oid4vpRP) {
     oid4vpRP.setDefaultOpts(oid4vpOpts, context)
   }
+} else {
+  defaultDID = undefined
+  defaultKid = undefined
 }
 
 /**
@@ -462,8 +470,41 @@ if (!cliMode) {
   }
 
   if (IS_JWKS_HOSTING_ENABLED) {
-    new PublicKeyHosting({ agent, expressSupport, opts: { hostingOpts: { enableFeatures: ['did-jwks'] } } })
+    new PublicKeyHosting({ agent, expressSupport, opts: { hostingOpts: { enableFeatures: ['did-jwks', 'all-jwks'] } } })
   }
+
+
+  if (IS_STATUS_LIST_ENABLED) {
+    new StatuslistManagementApiServer({
+      opts: {
+        endpointOpts: {
+          globalAuth: {
+            authentication: {
+              enabled: false,
+              // strategy: bearerStrategy,
+            },
+          },
+          vcApiCredentialStatus: {
+            dbName: DB_DATABASE_NAME,
+            disableGlobalAuth: true,
+            correlationId: 'status_list_default',
+          },
+          getStatusList: {
+            dbName: DB_DATABASE_NAME,
+          },
+          createStatusList: {
+            dbName: DB_DATABASE_NAME,
+          },
+        },
+        enableFeatures: ['w3c-vc-api-credential-status', 'status-list-hosting', 'status-list-management'],
+      },
+      expressSupport,
+      agent,
+    })
+
+    await getOrCreateConfiguredStatusList({issuer: defaultDID, keyRef: defaultKid}).catch(e => console.log(`ERROR statuslist`, e))
+  }
+
 
   // Import presentation definitions from disk.
   const definitionsToImport: Array<IPresentationDefinition> = syncDefinitionsOpts.asArray.filter((definition) => {
