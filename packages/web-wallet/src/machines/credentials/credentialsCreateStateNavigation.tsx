@@ -133,7 +133,7 @@ export const CredentialsCreateContextProvider = (props: any): JSX.Element => {
     } else {
       void onIssueCredential()
     }
-  }, [step])
+  }, [step, issueMethod])
 
   const onBack = useCallback(async (): Promise<void> => {
     const nextStep: number = step - maxAutoSteps
@@ -154,9 +154,11 @@ export const CredentialsCreateContextProvider = (props: any): JSX.Element => {
 
   const onOpenCredentialQRCodeModal = async (): Promise<void> => {
     setShowCredentialQRCodeModal(true)
+    setShowCredentialWalletUrlModal(false)
   }
 
   const onOpenCredentialWalletUrlModal = async (): Promise<void> => {
+    setShowCredentialQRCodeModal(false)
     setShowCredentialWalletUrlModal(true)
   }
 
