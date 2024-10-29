@@ -579,6 +579,9 @@ importers:
       '@sphereon/ssi-sdk.credential-store':
         specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
         version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.credential-validation':
+        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
       '@sphereon/ssi-sdk.data-store':
         specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
         version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
