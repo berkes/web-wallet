@@ -8,25 +8,25 @@ overrides:
   did-jwt: 6.11.6
   did-jwt-vc: 3.1.3
   '@sphereon/pex': 5.0.0-unstable.14
-  '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-  '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-  '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-  '@sphereon/ssi-sdk.oid4vci-issuer': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-  '@sphereon/ssi-sdk.oid4vci-issuer-rest-api': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-  '@sphereon/ssi-express-support': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-  '@sphereon/ssi-sdk.issuance-branding': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-  '@sphereon/ssi-sdk.siopv2-oid4vp-op-auth': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-  '@sphereon/ssi-sdk.siopv2-oid4vp-rp-auth': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-  '@sphereon/ssi-sdk.ebsi-support': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+  '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
+  '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139
+  '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139
+  '@sphereon/ssi-sdk.oid4vci-issuer': 0.30.2-feature.SDK.39.well.known.oidf.139
+  '@sphereon/ssi-sdk.oid4vci-issuer-rest-api': 0.30.2-feature.SDK.39.well.known.oidf.139
+  '@sphereon/ssi-express-support': 0.30.2-feature.SDK.39.well.known.oidf.139
+  '@sphereon/ssi-sdk.issuance-branding': 0.30.2-feature.SDK.39.well.known.oidf.139
+  '@sphereon/ssi-sdk.siopv2-oid4vp-op-auth': 0.30.2-feature.SDK.39.well.known.oidf.139
+  '@sphereon/ssi-sdk.siopv2-oid4vp-rp-auth': 0.30.2-feature.SDK.39.well.known.oidf.139
+  '@sphereon/ssi-sdk.ebsi-support': 0.30.2-feature.SDK.39.well.known.oidf.139
   '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
   '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137
-  '@sphereon/oid4vci-issuer': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-  '@sphereon/oid4vc-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-  '@sphereon/oid4vci-issuer-server': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-  '@sphereon/oid4vci-client': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-  '@sphereon/oid4vci-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-  '@sphereon/did-auth-siop': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-  '@sphereon/did-auth-siop-did-adapter': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
+  '@sphereon/oid4vci-issuer': 0.16.1-feature.SDK.39.well.known.oidf.178
+  '@sphereon/oid4vc-common': 0.16.1-feature.SDK.39.well.known.oidf.178
+  '@sphereon/oid4vci-issuer-server': 0.16.1-feature.SDK.39.well.known.oidf.178
+  '@sphereon/oid4vci-client': 0.16.1-feature.SDK.39.well.known.oidf.178
+  '@sphereon/oid4vci-common': 0.16.1-feature.SDK.39.well.known.oidf.178
+  '@sphereon/did-auth-siop': 0.16.1-feature.SDK.39.well.known.oidf.178
+  '@sphereon/did-auth-siop-did-adapter': 0.16.1-feature.SDK.39.well.known.oidf.178
   '@supabase/supabase-js': 2.7.1
   '@supabase/storage-js': 2.7.1
   '@supabase/postgrest-js': 1.16.2
@@ -114,26 +114,26 @@ importers:
         specifier: ^5.7.0
         version: 5.7.0
       '@sphereon/did-auth-siop':
-        specifier: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-        version: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
+        specifier: 0.16.1-feature.SDK.39.well.known.oidf.178
+        version: 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)
       '@sphereon/did-auth-siop-adapter':
-        specifier: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-        version: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
+        specifier: 0.16.1-feature.SDK.39.well.known.oidf.178
+        version: 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)
       '@sphereon/did-uni-client':
         specifier: ^0.6.3
         version: 0.6.3(encoding@0.1.13)
       '@sphereon/oid4vc-common':
-        specifier: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-        version: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
+        specifier: 0.16.1-feature.SDK.39.well.known.oidf.178
+        version: 0.16.1-feature.SDK.39.well.known.oidf.178
       '@sphereon/oid4vci-client':
-        specifier: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-        version: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)
+        specifier: 0.16.1-feature.SDK.39.well.known.oidf.178
+        version: 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)
       '@sphereon/oid4vci-common':
-        specifier: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-        version: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)
+        specifier: 0.16.1-feature.SDK.39.well.known.oidf.178
+        version: 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)
       '@sphereon/oid4vci-issuer':
-        specifier: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-        version: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)
+        specifier: 0.16.1-feature.SDK.39.well.known.oidf.178
+        version: 0.16.1-feature.SDK.39.well.known.oidf.178(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)
       '@sphereon/pex':
         specifier: 5.0.0-unstable.14
         version: 5.0.0-unstable.14
@@ -141,8 +141,8 @@ importers:
         specifier: ^2.3.1
         version: 2.3.1
       '@sphereon/ssi-express-support':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
       '@sphereon/ssi-sdk-ext.did-provider-jwk':
         specifier: 0.24.1-unstable.137
         version: 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
@@ -180,101 +180,101 @@ importers:
         specifier: 0.24.1-unstable.137
         version: 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.agent-config':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.contact-manager':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.contact-manager-rest-api':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.core':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
       '@sphereon/ssi-sdk.credential-store':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.credential-validation':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
       '@sphereon/ssi-sdk.data-store':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.ebsi-support':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.event-logger':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.issuance-branding':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.mdl-mdoc':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
       '@sphereon/ssi-sdk.oid4vci-holder':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
       '@sphereon/ssi-sdk.oid4vci-issuer':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.oid4vci-issuer-rest-api':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.oid4vci-issuer-store':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.pd-manager':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.presentation-exchange':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
       '@sphereon/ssi-sdk.public-key-hosting':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.remote-server-rest-api':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
       '@sphereon/ssi-sdk.sd-jwt':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
       '@sphereon/ssi-sdk.siopv2-oid4vp-common':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(typescript@5.6.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(typescript@5.6.3)
       '@sphereon/ssi-sdk.siopv2-oid4vp-op-auth':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.siopv2-oid4vp-rp-auth':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.siopv2-oid4vp-rp-rest-api':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.uni-resolver-registrar-api':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.vc-handler-ld-local':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native-securerandom@1.0.1(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1)))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native-securerandom@1.0.1(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1)))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.vc-status-list':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.vc-status-list-issuer':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.vc-status-list-issuer-drivers':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.vc-status-list-issuer-rest-api':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.w3c-vc-api':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-types':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139
       '@transmute/lds-ecdsa-secp256k1-recovery2020':
         specifier: ^0.0.7
         version: 0.0.7(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
@@ -529,26 +529,26 @@ importers:
         specifier: 5.9.0
         version: 5.9.0(@refinedev/core@4.51.0(@tanstack/react-query@4.36.1(react-dom@18.3.1(react@18.3.1))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(@supabase/supabase-js@2.7.1(encoding@0.1.13))
       '@sphereon/did-auth-siop':
-        specifier: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-        version: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
+        specifier: 0.16.1-feature.SDK.39.well.known.oidf.178
+        version: 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)
       '@sphereon/did-auth-siop-adapter':
-        specifier: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-        version: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
+        specifier: 0.16.1-feature.SDK.39.well.known.oidf.178
+        version: 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)
       '@sphereon/did-uni-client':
         specifier: 0.6.3
         version: 0.6.3(encoding@0.1.13)
       '@sphereon/oid4vc-common':
-        specifier: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-        version: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
+        specifier: 0.16.1-feature.SDK.39.well.known.oidf.178
+        version: 0.16.1-feature.SDK.39.well.known.oidf.178
       '@sphereon/oid4vci-client':
-        specifier: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-        version: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)
+        specifier: 0.16.1-feature.SDK.39.well.known.oidf.178
+        version: 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)
       '@sphereon/oid4vci-common':
-        specifier: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-        version: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)
+        specifier: 0.16.1-feature.SDK.39.well.known.oidf.178
+        version: 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)
       '@sphereon/oid4vci-issuer':
-        specifier: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-        version: 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)
+        specifier: 0.16.1-feature.SDK.39.well.known.oidf.178
+        version: 0.16.1-feature.SDK.39.well.known.oidf.178(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)
       '@sphereon/ssi-sdk-ext.did-resolver-ebsi':
         specifier: 0.24.1-unstable.137
         version: 0.24.1-unstable.137(encoding@0.1.13)
@@ -571,59 +571,59 @@ importers:
         specifier: 0.24.1-unstable.137
         version: 0.24.1-unstable.137
       '@sphereon/ssi-sdk.contact-manager':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.core':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
       '@sphereon/ssi-sdk.credential-store':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.credential-validation':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
       '@sphereon/ssi-sdk.data-store':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.ebsi-support':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.event-logger':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.issuance-branding':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.kv-store-temp':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.mdl-mdoc':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
       '@sphereon/ssi-sdk.oid4vci-holder':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
       '@sphereon/ssi-sdk.oid4vci-issuer-rest-client':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
       '@sphereon/ssi-sdk.pd-manager':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk.qr-code-generator':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139
       '@sphereon/ssi-sdk.sd-jwt':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
       '@sphereon/ssi-sdk.siopv2-oid4vp-op-auth':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
       '@sphereon/ssi-sdk.w3c-vc-api-issuer-rest-client':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@types/node@18.19.59)(encoding@0.1.13)
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139(@types/node@18.19.59)(encoding@0.1.13)
       '@sphereon/ssi-types':
-        specifier: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-        version: 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+        specifier: 0.30.2-feature.SDK.39.well.known.oidf.139
+        version: 0.30.2-feature.SDK.39.well.known.oidf.139
       '@sphereon/ui-components.core':
         specifier: 0.3.1-next.6
         version: 0.3.1-next.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3138,38 +3138,42 @@ packages:
   '@sinonjs/fake-timers@10.3.0':
     resolution: {integrity: sha512-V4BG07kuYSUkTCSBHG8G8TNhM+F19jXFWnQtzj+we8DrkpSBCee9Z3Ms8yiGer/dlmhe35/Xdgyo3/0rQKg7YA==}
 
-  '@sphereon/did-auth-siop-adapter@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172':
-    resolution: {integrity: sha512-orTW10qXuYYJLe3Id0IScBJt9qgEK+qQ+BJmHNYeCBhxZobl0DtMm106RVhwBd5RKM8yxVByVUIvBAoNr6UR4A==}
+  '@sphereon/did-auth-siop-adapter@0.16.1-feature.SDK.39.well.known.oidf.176':
+    resolution: {integrity: sha512-hl5NsrvEdyAy8HIhVtx8JRgfAjDnHjNoA/Jd7QMk4R6QeO1571+CTUqI2FLVjyYtflo9uRhvKnDOMBMLLe0hWQ==}
     engines: {node: '>=18'}
 
-  '@sphereon/did-auth-siop@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172':
-    resolution: {integrity: sha512-3dXIOBPt0jRt/F1Z1D2j2CNH6u4NMOR2W6SPdFDv4bco3+ZNdWZIRUQKxADvQj6KzmVo9RrvK70ZoHy7aTfXUg==}
+  '@sphereon/did-auth-siop-adapter@0.16.1-feature.SDK.39.well.known.oidf.178':
+    resolution: {integrity: sha512-jRYeqSMEZDOkEdLy+tiFEGvDE5pWq5CawtJ+nsxfGjHfPlzqIsNzSS5zD8aeh8qmvc227K8UTZ2vwpHqGb9nRg==}
+    engines: {node: '>=18'}
+
+  '@sphereon/did-auth-siop@0.16.1-feature.SDK.39.well.known.oidf.178':
+    resolution: {integrity: sha512-DCQCsGbz3YpXhenmDrkbLef+63j/5YFx9/QMuAzXjFnPtJZKyfg0BmDNEVxAJo5p3X/R/VLA+hlwMBZytqyP0g==}
     engines: {node: '>=18'}
 
   '@sphereon/did-uni-client@0.6.3':
     resolution: {integrity: sha512-g7LD7ofbE36slHN7Bhr5dwUrj6t0BuZeXBYJMaVY/pOeL1vJxW1cZHbZqu0NSfOmzyBg4nsYVlgTjyi/Aua2ew==}
 
-  '@sphereon/jarm@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172':
-    resolution: {integrity: sha512-xn+2QjU92bOkmTO6TfkzE4YgVgdwDKxGd4w1ghJjh79N6KOw1BJyCBMhxNzkb832WKW/XNQ09iTFa6nUpzy8Og==}
+  '@sphereon/jarm@0.16.1-feature.SDK.39.well.known.oidf.178':
+    resolution: {integrity: sha512-B+koIVGTuMTLkXYwweuICb/9gQpYzlWA6BqdLBWZFUuF0MOQzg1wOYh/F9SXUCU0oZO7Z+6Yx1gt/6o4DYa8Ng==}
     engines: {node: '>=18'}
 
   '@sphereon/kmp-mdl-mdoc@0.2.0-SNAPSHOT.22':
     resolution: {integrity: sha512-uAZZExVy+ug9JLircejWa5eLtAZ7bnBP6xb7DO2+86LRsHNLh2k2jMWJYxp+iWtGHTsh6RYsZl14ScQLvjiQ/A==}
 
-  '@sphereon/oid4vc-common@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172':
-    resolution: {integrity: sha512-eBgiQpr9uyOAC2Mo372ytnBzNotYXUMgBMB4MsTlrFKk3uyZF/cqElDrbaf3GfswtSjRiIPsILq2tmw9H0HDSA==}
+  '@sphereon/oid4vc-common@0.16.1-feature.SDK.39.well.known.oidf.178':
+    resolution: {integrity: sha512-Q/GPv7Hw7RyYQI1osIJ6IboESA6JLv1X7ogKMd+WTpINolc1bivMhPfH1Y4k+QHaYgrH4W0t2l7w2FYw3U1gYw==}
     engines: {node: '>=18'}
 
-  '@sphereon/oid4vci-client@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172':
-    resolution: {integrity: sha512-4xCgdPuJtTpKg1TuQqEVP4yhyk4lxCbFMlvh6deChD5jcVTpaAFeytiGwEZ2oYa2ZLpujBgmkKagsRI8XXF0fQ==}
+  '@sphereon/oid4vci-client@0.16.1-feature.SDK.39.well.known.oidf.178':
+    resolution: {integrity: sha512-9+B7abOXTXYBTHIEEVIzEc6P5Z4wAvFcEBdxXnInaa0SfVkqaQN/iKIizUajuNQgtc2FtpFxtEjtGGkrAM/5dA==}
     engines: {node: '>=18'}
 
-  '@sphereon/oid4vci-common@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172':
-    resolution: {integrity: sha512-ZuFZIA6hkOtkkJsKVxSvKpW6SUycRc67tDJgrASVxczpqiVf9kM+S9adY4Ao6N3aKizYxBDcexYwD/s28dhk5w==}
+  '@sphereon/oid4vci-common@0.16.1-feature.SDK.39.well.known.oidf.178':
+    resolution: {integrity: sha512-Xk3azz5+69pQdKBzXkUejT1v7khZz3SJ50RZ9KrwBL8FK6AOoeI8/PrDmbw1v26ngGWZj9Z1E4RKQwMG9b3NQg==}
     engines: {node: '>=18'}
 
-  '@sphereon/oid4vci-issuer-server@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172':
-    resolution: {integrity: sha512-UVFUN1qKPmYIlf+L3TOQlO5xj8lP+mQvvUR6DCV9SjVL3vvL4bVaaZNQ/QkALjpgQ7GH6Rx6h9LDzeL7xihmsA==}
+  '@sphereon/oid4vci-issuer-server@0.16.1-feature.SDK.39.well.known.oidf.178':
+    resolution: {integrity: sha512-d+KdEgbCygSHRTTFYjjupu8Lq8XIu6lpCdvq4IGFgcfnr2INnF08noSPr0SoQGoFtq5x1diQlIwU0d5FVdPqbg==}
     engines: {node: '>=18'}
     peerDependencies:
       awesome-qr: ^2.1.5-rc.0
@@ -3177,8 +3181,8 @@ packages:
       awesome-qr:
         optional: true
 
-  '@sphereon/oid4vci-issuer@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172':
-    resolution: {integrity: sha512-bkFKTjLMkGf59Q1i8cVUUjpz040zu9VC94wDmXx/7B/7snVHG2g9JV2SdbuDsBBcBy9VO5+65AB0OO6KMcLevQ==}
+  '@sphereon/oid4vci-issuer@0.16.1-feature.SDK.39.well.known.oidf.178':
+    resolution: {integrity: sha512-acdc2kv25TcJRrxj+ANMW2IRbqEszfuowBQIETZ7cYNbtTtthyf+1s/88lq0WIlySs/KDjAUK5xDSHi1FsG9tQ==}
     engines: {node: '>=18'}
     peerDependencies:
       awesome-qr: ^2.1.5-rc.0
@@ -3193,8 +3197,8 @@ packages:
     resolution: {integrity: sha512-BWrEOFTyl8tpa+HLwbxEP/DIuAGm8+uSvjQFFDsOY4gS3Wt0C+mBeYqtmfDy7/pv3DtvVPxQMoEq3tvvC7/Nhw==}
     engines: {node: '>=18'}
 
-  '@sphereon/ssi-express-support@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-mRyfJDFnoA+Ju65oOVUptEieORb+b+vpkzafloPMUyjNwKUb7dwVfjScSAIrjKHCCGOuPNYXh6q98x4hDITwPw==}
+  '@sphereon/ssi-express-support@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-5jrrryqlPcWOH7wjSxpdyV9wTAqoxo0BDiHJxXzhwXfPUBtt21bODLZzfhQYTfbCpOyQBaAxlKnxoNtqm2Z/cA==}
     peerDependencies:
       '@noble/hashes': 1.2.0
       passport-azure-ad: ^4.3.5
@@ -3267,122 +3271,122 @@ packages:
   '@sphereon/ssi-sdk.agent-config@0.30.1':
     resolution: {integrity: sha512-8IRct+v8l9T+NACJzm78fH9LzoLiU7q+nHj8keOjFcLrV4CmdpyfuMYdRwrbFXTrLqV1rndAJQ7GGxX+UEq4JA==}
 
-  '@sphereon/ssi-sdk.agent-config@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-q27IBvw25OPm7Rw0vmw0UefA4w76yKrqwKie8BZd3pR0aMuVeXHdZaRfYcCDHSLddYBitGzbWymnrK5gd3Vxuw==}
+  '@sphereon/ssi-sdk.agent-config@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-X7Xls29dgT+IDqdYtw/EwuZM97Scs1DjoIFnwzRQOnoL30bq8OYDyiNMd7znis1SRYzos5pvR1TB9H5IEI1+8A==}
 
-  '@sphereon/ssi-sdk.contact-manager-rest-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-ncsx3OoHyqCb8fUXDUiz22NGmZd34y4x3TnPOwiVHn9ZWhqvX9kLQ03q6GpVx4rvmBhExpECEMe3NCu86pBjnQ==}
+  '@sphereon/ssi-sdk.contact-manager-rest-api@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-7MRzqN6r/PohG0dc/9J6jgMvTMTCFXbi1NyFhG2crzEgVDtn6axwRKf5GMx8/Bf9DpRFo9ZIVEB3vFwGsa7Rbw==}
 
-  '@sphereon/ssi-sdk.contact-manager@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-QlvyozcKshWwj/Mq9sItjD51mgO0Jf8Vh62Ygt7aD4/FAmPDWIXI3h/B8ZCelF7LBTw1nnZG7/nE28gxP+GUuA==}
+  '@sphereon/ssi-sdk.contact-manager@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-xWnuw80DcZr5yAcQHmPhqYPP65Wem3ncbtuA6tq7Y2RXkReeRaj3PhsI2FkvVeCLbg5T4s3CLBJCXSIvPI9PQQ==}
 
-  '@sphereon/ssi-sdk.core@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-iZzChAaJWG/tVqV88YSspoWl5YX5IuaIYy5ELPzWbzax/ckouFUX25aXjuxscBZCRqnEEbiakO8YojqQ5K2skg==}
+  '@sphereon/ssi-sdk.core@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-2C2ey+B4qVSQHPb4iTnOCYdwHgxoxAF5uybqCQoXW0w0k3Apbq8k3axfVHtGPFf5GsezI8JcABJ2woNg2l/UCA==}
 
-  '@sphereon/ssi-sdk.credential-store@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-nSRb52c9TDAeU2H5R+HUSMYasuwFJTklx+7uHSBKREtkv4RHvOXZukRawiwhrUWrYvzFNbDEf7902+E0l8BxHw==}
+  '@sphereon/ssi-sdk.credential-store@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-YPuhgLCNxvTJw/RdQUG0BYU1hYmcmpoCCYstLuj7IWeZLHiCRWtCWT68SLvk2ajlepCRVJ/Xzyt+yTOhu+2rmw==}
 
-  '@sphereon/ssi-sdk.credential-validation@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-sDC6iImNjrEOtctbMh/OE4SJ62SG1NTS8nBcpmWj7U2e7weNBngbCwd3CqjyFs4k3OTTNgnBpd5sKWtlsv7HKg==}
+  '@sphereon/ssi-sdk.credential-validation@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-B6f/BLqDQscLRCgvVQ7MPdjxSK5RXLaVvTA9OLtEuD4f2SH8lZr8fM1jZGEYp+NCjPHc4d/z+AEkeLnXxNysoQ==}
 
-  '@sphereon/ssi-sdk.data-store@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-qHsbIyim8RmyPzhwMESzjSYTrZ2BVZAnLhB3HH68GOFSpQ/TTYS/hA/qY8GSJOWh6vr3WDsTJf6M/t7tcgdv7Q==}
+  '@sphereon/ssi-sdk.data-store@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-kiURdJ9Y+dcyGeQZCwKLa4h7s3xF2Y2rDdCOMNO0s1bInXn5nlf4OP444jyRbZoj5nmxpsI6B5/iMwWeV/92QA==}
 
-  '@sphereon/ssi-sdk.dev@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-QDGqtN8kG/0+ljAMuTTcMs2BAjWLUKScEtDlmDtHo3An4d22IJWR30+xUJnVZQDlW+QDASkTVJ1NXRv4rrkWCQ==}
+  '@sphereon/ssi-sdk.dev@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-Rw+Wz2wqVpU8IdR57lHEsRNVluUK1g4vkO2f+VxHTkQ/LUk9ftvLXRn0MiaND2rA613X6Wo9cfIab8480qKusw==}
     hasBin: true
 
-  '@sphereon/ssi-sdk.ebsi-support@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-a8P+nIUyi+LKFfDdGB3BH/PAwvTtungw9qwF7uynyb8QiiMsGHABaobD4gVGjtVSKOl/50FQPIF4DNpWFo2NLA==}
+  '@sphereon/ssi-sdk.ebsi-support@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-wVeg4Wg/qFxvL1Kt3oUCKo8yAyufJ+47xkBLSdcLney937dr5+RKZ6TldCSViJhD5jv9oYXOLAdB6WeDL7jufQ==}
 
-  '@sphereon/ssi-sdk.event-logger@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-vgSA/PdGOsiZZRhNvfHCn3aJQS5/Znvhd7guROAwPt8KJBPXJEIzxLpnn1PqsvdWjM9qm78gx6mibtGqK/3vMw==}
+  '@sphereon/ssi-sdk.event-logger@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-VC4kYBk0eWhMfTBltdQSPuBztFjixh+7qvi930KBbOCdhr4eqCB0aec170NNQs11jglyM1bqMGHpvR8XXD79yg==}
 
-  '@sphereon/ssi-sdk.issuance-branding@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-6sI0QoGxkLI1dBOTinWCcPWVn4IAst/pBCEMA4A5/mSOJHrcz8sMXpuJffBNYAgnFWx/91mCFkIRhgzTRkAALw==}
+  '@sphereon/ssi-sdk.issuance-branding@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-UDJVqWWPuprCZzezF7WGJ8h/JqlO/IopwuK/VjoHlRkpUq7E/xKaagM1Jz1CcpCxtF4yDDxGABzBAHnSeuQLWA==}
 
-  '@sphereon/ssi-sdk.kv-store-temp@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-H68E1l3YdH6Ud1n3BfaiZfdKjoXwR8SZbNPQbH4uEtK8toffiRh02Mm5r9mqQE6bG2JjM9cvHkN/sMMBOFhJUw==}
+  '@sphereon/ssi-sdk.kv-store-temp@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-WZcnk6RtMAU5zSQZPUT3prpKk+MRgLm+oMAnP8oaCVzalFuSxM12q5eFsae9PqkooWTKzO3CS9dq8iucg5gV5g==}
 
-  '@sphereon/ssi-sdk.mdl-mdoc@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-U343INimIEcbqkbqROIGMF2/38JGlcIeQk1yMfrdoczJdeL/G5WYiCq3s/5kXD3A+1C7n9YLI69jnaALAxTS3Q==}
+  '@sphereon/ssi-sdk.mdl-mdoc@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-ZMnQn8BeqEoBQ3iwOFZfXiTQQhJKG79NiiRlFCNpFBOamztQWu7ijSYEyAbCqUE1JC427zDNj974q0o8kAbo3w==}
 
-  '@sphereon/ssi-sdk.oid4vci-holder@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-mKChox4XvOpAzs2n9JZHHwYE5/wL5HygURhmAzMPAoc7splROSzOVKuJm/Rooux1OrfW4iDFKxi3nIjpC0qUwQ==}
+  '@sphereon/ssi-sdk.oid4vci-holder@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-l1oCShsre3TKiqlmwqD8ORtyOdRPnECa8Jg8QlWyHyXHKkvvnmTM6r0ASz7sNuJOR7Nyl9fZu0OVd9BJT58zyA==}
 
-  '@sphereon/ssi-sdk.oid4vci-issuer-rest-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-UxL93fViQxvMlNev+6bHvgaBK5suHbmaY9/bujn421Js1NXvVNERtbijLG3IVOxmRJH7+ftCjP9A/FN6dQmvjA==}
+  '@sphereon/ssi-sdk.oid4vci-issuer-rest-api@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-wF7SQ0E+vQ1qn0AfZNNExS3w8/dW5jkbA0Q5Q0XihnhS9rNa4cn7nipoS9mZ3jV1dsgraev4lTnWrwbTX021eA==}
 
-  '@sphereon/ssi-sdk.oid4vci-issuer-rest-client@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-cAG89qmAuW0ojpssxdcPezabvPLY8YsQLil2bdtweusVT2VJP8iccDb9K+vrclzt3toSnlJIZKvRnEEKgMzydA==}
+  '@sphereon/ssi-sdk.oid4vci-issuer-rest-client@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-iUjQyLmYMGFFv34JsbY3TEv0kbRLtvxDi2DvIeCpaJuybOxtHEWuoAvzt3qUdWd99di4nlS8lMjTLCpMzEfJ5g==}
 
-  '@sphereon/ssi-sdk.oid4vci-issuer-store@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-X24Nw46LeXWlAM3qlVc2Hy80h4LP4BemMTvevf2dvQs5bp0567h/7mEr4TjcKxnSF5nK8xCOwA8Ir40slDrmgQ==}
+  '@sphereon/ssi-sdk.oid4vci-issuer-store@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-gwybg7zrbCJO4mM9zrxWIweRPlTH05GDmumywWf/UIwKo42b4eUvvKPcQ2FtT2j8spKbCfAPJisTRHtHfcYbzg==}
 
-  '@sphereon/ssi-sdk.oid4vci-issuer@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-w+GPhPK1dFW497XzX8E3YGD0JG6GUYROD4SO5n9jXn2jkk0ryjpnHzyZkFCsrm464HJYPZb3/Ji9jLhTDmgcXA==}
+  '@sphereon/ssi-sdk.oid4vci-issuer@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-54VeTURfFScoEB/h5ksBm8h/PGAZ210eYwO4aA+disszuf8lSMWxRAD4RN23o9WyTkjiEXu1x2+tVVVd83EPwQ==}
 
-  '@sphereon/ssi-sdk.pd-manager@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-wHBybavxLnQZdlDiNFcag2F2844NwJv0CTKyDHBzJCqh//AiNlfgwq7ehdfrxRtGQjj3tiaF3EcFmS3ZVOGooA==}
+  '@sphereon/ssi-sdk.pd-manager@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-Z1HgugUv33tzyKq+t6+68Rf8gFpGlGM0J8tuCrzbgY67+4IlDMVWGUJ2oX+NXQXiIaNh3zOHZ3r+tAHu+Bo3qg==}
 
-  '@sphereon/ssi-sdk.presentation-exchange@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-F5rvf8/soet/aRns39Pk/2BMFPMS3dzR8njz1fGAhadZBKY0yUKRW0KCELx8x6mEPdVGT8uCCUq/U4IfUwDfgw==}
+  '@sphereon/ssi-sdk.presentation-exchange@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-S8NKhj4c7h61fUI5STntRlqIgbQJe5HwRThUr7bUmMwkHioQJ5zrKT4svw1mUwzfSPCRkqwcI7sdjzPWYXLD3g==}
 
-  '@sphereon/ssi-sdk.public-key-hosting@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-/YqwcFRL2cacrdKA/6lAnvTD/fluv3LgE7GsE9GcbK1j96ZAOmASPrsjmDVGlgmyPDEu7HpUGljQ90dq57BYzg==}
+  '@sphereon/ssi-sdk.public-key-hosting@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-WlgxBzmb7KxSxtN+OP8tJ1qosNUg6JGGZ4aAbgA+y5sas8pt+RmQlxBxBJOHny8NreIW3lSgjIhcdr9jgvYzXg==}
 
-  '@sphereon/ssi-sdk.qr-code-generator@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-uuSgPTeYjjDBlSns3EnrnpgeEPvxHIGNuXdiSl6RIMCv86tbXs/Kzv2y7VMRfAPcnz/KDcTRkTb5ryQDBuquCA==}
+  '@sphereon/ssi-sdk.qr-code-generator@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-bkDm2RL1eJx6dyy/yMIylef3g4Ut3c9+bsvGi+eWEFWcOCA+iOl/UGcKek8q9a6Blh8UrUkNQ1DIjYN2LTBKVw==}
 
-  '@sphereon/ssi-sdk.remote-server-rest-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-z+ZEnPOuv302W2WBwwyyygO1sowHwAEkIwQx1Ts/agjJ/SfdQEleY8ZrFM//jDCKrRLsKr7nUD7X6gm5IoY6kA==}
+  '@sphereon/ssi-sdk.remote-server-rest-api@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-mlnazRqOf+3BQ74AQbEuNAYu+AlqAQopsJDi0hmNWde/hk40RBWeprLzR0SQgYlHEUc7wADgnWuBjzMjhV6jMw==}
 
-  '@sphereon/ssi-sdk.sd-jwt@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-aJ30dfD3782I8qYuZOY4vVaNBIJImq1RIwIQbbgmBpHNNgacCzt29kml5Ws+Or2lzTZY/QXcBHXJ8wQi4yKQ/w==}
+  '@sphereon/ssi-sdk.sd-jwt@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-X17Vdc4hKSlOFU0Ucuhdk5dLzT2wjSXIZNQbu7OO95bCm/+nE+bzuwkqs9VgLw+7C6FYxlHIpDPp6Dus0A4ZAA==}
 
-  '@sphereon/ssi-sdk.siopv2-oid4vp-common@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-24Mj2gaTFWiXYh/KcRMV4FzD6vWPJQyvpkiOWQw2Fe+XVGyknrlXbtxDtg7mMF+IVaup372rE/rNpneUbRO/8Q==}
+  '@sphereon/ssi-sdk.siopv2-oid4vp-common@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-HHTEzVyNsQgi/G2x19SArNu8HDpmyz/PSOMWL8H3/SrkBDpci5AkKfWokByFNas4laGCA7J6fhwgHuevwTgPgw==}
 
-  '@sphereon/ssi-sdk.siopv2-oid4vp-op-auth@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-NiRaq+U5PqtMfcfBn3oruWBaDhyQnkDMVT0v1Ouw92L7V+ugd0Vz4Eb5iFhnOWthZzbGOhD6wFsfk/DTHWD/EA==}
+  '@sphereon/ssi-sdk.siopv2-oid4vp-op-auth@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-qTWy+sUhEp2cBx2ngLT175vlFzd4qoJys8VAHb6L3PkNH2OfGreBJpJjFKXXWmfEslRfi0T5U3Kb+dkDOnuKdw==}
 
-  '@sphereon/ssi-sdk.siopv2-oid4vp-rp-auth@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-7dOk/yUsQoRQIqaMwlptbUfkzQe9rMHzXhrttV093y24QnojtS+3mk5dhq6G23wzk67qAEdcSTsmBAI+9WPBKA==}
+  '@sphereon/ssi-sdk.siopv2-oid4vp-rp-auth@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-aMV+sHNvv/WLDKgUt6/UZQfSPy1UGfg2vzvBYUT8XjcFrvumDdkgZLgPq/pDNQGuxve/w7hEqCp0+Wtzv8E04w==}
 
-  '@sphereon/ssi-sdk.siopv2-oid4vp-rp-rest-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-CP5wLZfvSITTg+DPUnn70sILl9oLEXpL9XcwiinApN6/vSbD8nhHT0FYtw1Sw79vomze8aEt6337Ljak6nrTnA==}
+  '@sphereon/ssi-sdk.siopv2-oid4vp-rp-rest-api@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-4Ka1beb5ISpaenBeUG+KjpCDxwkAdyC0Au6oKXdN/Ob6R7ek6Tzqo5DT9pGyiBRN1DKU6gRaAWmkMcrXZLFOnw==}
 
-  '@sphereon/ssi-sdk.uni-resolver-registrar-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-z3H8BCdeRmnFTAU/J7Px8+ld0ap0+1htpyabNy/h1+bsjQk/Xd+wyASx+4fGgZ0mxgY6GttBoI1RR+RjFJ2bFw==}
+  '@sphereon/ssi-sdk.uni-resolver-registrar-api@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-5gcsmHz2Jlav5ewTE/Xdx0HwpAUn0mJYVJQ6hPGdd4PmelCiz6C7LQSqS76lG2jX9t4CNscwBM0fui4fXemlkw==}
 
-  '@sphereon/ssi-sdk.vc-handler-ld-local@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-Sg6rBWRWjeyr2UF7scXJqw082o7yHHqoJwG89kXvSNLRUnuMuFu4Aix87hRBRatb/hx0S5/CVAKIT6ohiSUawg==}
+  '@sphereon/ssi-sdk.vc-handler-ld-local@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-aeMEMgI6saoudrWUdXaBIiVSI555+eJnF52tNl8o+pj/EauY0uDKplICepcoBHtMTkO8Z2CsG12u38WuQX41Sg==}
     peerDependencies:
       react-native-securerandom: ^1.0.1
 
-  '@sphereon/ssi-sdk.vc-status-list-issuer-drivers@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-p+Bt7p83yg8q8b4FA4dLHV1qajydGRGW2p6Y/1aBKNNrEbTkNpfiDENNwG0pDrVX90ilXLxkLoWyneYe6G8Q8A==}
+  '@sphereon/ssi-sdk.vc-status-list-issuer-drivers@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-1aCiHpXTykHhbdLI/eAn9icdlLciZACg8ihcMCz/tLXqLvMQu+2y5FcadIuKcquFnC0SQHVAI6fBTWRUFbNjkg==}
 
-  '@sphereon/ssi-sdk.vc-status-list-issuer-rest-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-o7NLdBhBN9Dz7WlGeDOF0t+kB+iO7Gj8lhxTynbrl70r3D4nyMyHL3029IFvg/uLeVaS04CrzUCoRfXhLHX+vg==}
+  '@sphereon/ssi-sdk.vc-status-list-issuer-rest-api@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-6Ey2gaioB4Q8K8Y7Ps/cIyOoeBtgMxocU+SzATehoCwUrLjROu4ZfYFGcaOtG4LYO7bguhunj9UWS1x9+XHCYQ==}
 
-  '@sphereon/ssi-sdk.vc-status-list-issuer@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-xMUFxIooHsRi4+1U+5OkWFG7dhwp9nFJ2TdTQXX7uPhRFTLDlBWqUA/ctdGEuyFHjapKnXF1WnKsusjNrSQh0w==}
+  '@sphereon/ssi-sdk.vc-status-list-issuer@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-GN5RC9RTKHruv3NxA/JZLUBQtBMATRhB+7ENxPCPMqhSrIAJtAr1PWLMZMeQbBIOMJxK5P409EeTZImBbwnqBw==}
 
-  '@sphereon/ssi-sdk.vc-status-list@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-lCGnvTufCiTyUcDswJNgU239kefH6/viYqVsquUKgSEpQnDy9S3umUjD+M2GQ8lvjSqZICV68HLiYpzNF/mdvg==}
+  '@sphereon/ssi-sdk.vc-status-list@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-6igbvO3yn8io5A8Djcegv1w2LxUVJBiN6UALRSyrmTvWbzN13Q1jk/mIHegpTpUqnrQjmDXGcPYMYC4RFbuelg==}
 
-  '@sphereon/ssi-sdk.w3c-vc-api-issuer-rest-client@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-t4o5jdukpfql67/nNo4YbP/XZRlVtYCrQFN+cUV9GWpBBlcg6jY+jVrpnXdfKROmr31KWaGDpU6GgmvxuIgdmA==}
+  '@sphereon/ssi-sdk.w3c-vc-api-issuer-rest-client@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-W90Wbk/2MVs07oUlXmIqNIv2kQFLMtLgvuVyfboh8VZFzbXr8r5w7ruthq1KqXu7VrIfYOguqyA/5FbvzcTigw==}
 
-  '@sphereon/ssi-sdk.w3c-vc-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-WDcHGp6dMhZ4etZBx2/9RdzTIL1iySa4l4V/nDJAugoTs718bDyBlpuSCsf2qe9NBiwiR0mkvScgtq879CUgOw==}
+  '@sphereon/ssi-sdk.w3c-vc-api@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-gIW+1RLZSpKYC0iObVQSj6kD2LNXzFJ3sMcJBJTnGPEaO7z2pYd6TNmyFN+7GTYxvZJ0g0hP3uQMkuNd+veedQ==}
 
-  '@sphereon/ssi-sdk.xstate-machine-persistence@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-Tl1owBhZcBm/ZWtmjNg8fw7gM19As/h0glCHpS4WH+zcK6up9oVjMAGCw1D30H09+zS+Dmvvk5OUiA4CWodj2g==}
+  '@sphereon/ssi-sdk.xstate-machine-persistence@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-j4lG+MUeYvFBeJ3Qq0lh+bAl74ySl1XU4PAJeT53VxzJtdJ3//QOjnKAkHbQwJlunfmo/MYWtv6/8z2p7c9itQ==}
 
-  '@sphereon/ssi-types@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
-    resolution: {integrity: sha512-w5FlatIeq1fJOWyxKH3Ej7sJAP4AYmRr6tdkF5LVVWJM1UyFmC8HBTu5lONkc97J++BNY+lckxUVJfrYxAS0jw==}
+  '@sphereon/ssi-types@0.30.2-feature.SDK.39.well.known.oidf.139':
+    resolution: {integrity: sha512-QcnB2vG3ZhESVvQQaElgeiuQctbGBFo1Bi6aovIVYATlAH8Zxpn/iGrBo1D6YXkl08lCuRN8Fh2VCOrkh4+FjA==}
 
   '@sphereon/ui-components.core@0.3.1-next.6':
     resolution: {integrity: sha512-15NOs0nWAgdDMF+79ye2iKP9t4+4/KvdlMO3ooG2ILKnQ67rSZ1I6bUtoQbLKa3qO23aIN34F0AugFUcdPCsYg==}
@@ -13790,11 +13794,11 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.1
 
-  '@sphereon/did-auth-siop-adapter@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)':
+  '@sphereon/did-auth-siop-adapter@0.16.1-feature.SDK.39.well.known.oidf.176(encoding@0.1.13)(typescript@5.6.3)':
     dependencies:
-      '@sphereon/did-auth-siop': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/did-auth-siop': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)
       '@sphereon/did-uni-client': 0.6.3(encoding@0.1.13)
-      '@sphereon/oid4vc-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
+      '@sphereon/oid4vc-common': 0.16.1-feature.SDK.39.well.known.oidf.178
       '@sphereon/wellknown-dids-client': 0.1.3(encoding@0.1.13)
       did-jwt: 6.11.6(patch_hash=afqywxnnjnsy6hwgax66dyyiey)
       did-resolver: 4.1.0
@@ -13803,16 +13807,29 @@ snapshots:
       - supports-color
       - typescript
 
-  '@sphereon/did-auth-siop@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)':
+  '@sphereon/did-auth-siop-adapter@0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)':
+    dependencies:
+      '@sphereon/did-auth-siop': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/did-uni-client': 0.6.3(encoding@0.1.13)
+      '@sphereon/oid4vc-common': 0.16.1-feature.SDK.39.well.known.oidf.178
+      '@sphereon/wellknown-dids-client': 0.1.3(encoding@0.1.13)
+      did-jwt: 6.11.6(patch_hash=afqywxnnjnsy6hwgax66dyyiey)
+      did-resolver: 4.1.0
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+      - typescript
+
+  '@sphereon/did-auth-siop@0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)':
     dependencies:
       '@astronautlabs/jsonpath': 1.1.2
       '@sphereon/did-uni-client': 0.6.3(encoding@0.1.13)
-      '@sphereon/jarm': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(typescript@5.6.3)
+      '@sphereon/jarm': 0.16.1-feature.SDK.39.well.known.oidf.178(typescript@5.6.3)
       '@sphereon/kmp-mdl-mdoc': 0.2.0-SNAPSHOT.22
-      '@sphereon/oid4vc-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
+      '@sphereon/oid4vc-common': 0.16.1-feature.SDK.39.well.known.oidf.178
       '@sphereon/pex': 5.0.0-unstable.14
       '@sphereon/pex-models': 2.3.1
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@sphereon/wellknown-dids-client': 0.1.3(encoding@0.1.13)
       cross-fetch: 4.0.0(encoding@0.1.13)
       debug: 4.3.7(supports-color@5.5.0)
@@ -13834,9 +13851,9 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@sphereon/jarm@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(typescript@5.6.3)':
+  '@sphereon/jarm@0.16.1-feature.SDK.39.well.known.oidf.178(typescript@5.6.3)':
     dependencies:
-      '@sphereon/oid4vc-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
+      '@sphereon/oid4vc-common': 0.16.1-feature.SDK.39.well.known.oidf.178
       valibot: 0.42.1(typescript@5.6.3)
     transitivePeerDependencies:
       - supports-color
@@ -13848,9 +13865,9 @@ snapshots:
       '@js-joda/timezone': 2.3.0(@js-joda/core@5.6.3)
       format-util: 1.0.5
 
-  '@sphereon/oid4vc-common@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172':
+  '@sphereon/oid4vc-common@0.16.1-feature.SDK.39.well.known.oidf.178':
     dependencies:
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       jwt-decode: 4.0.0
       sha.js: 2.4.11
       uint8arrays: 3.1.1
@@ -13858,21 +13875,21 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@sphereon/oid4vci-client@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)':
+  '@sphereon/oid4vci-client@0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)':
     dependencies:
-      '@sphereon/oid4vc-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-      '@sphereon/oid4vci-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/oid4vc-common': 0.16.1-feature.SDK.39.well.known.oidf.178
+      '@sphereon/oid4vci-common': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       cross-fetch: 3.1.8(encoding@0.1.13)
       debug: 4.3.7(supports-color@5.5.0)
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@sphereon/oid4vci-common@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)':
+  '@sphereon/oid4vci-common@0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)':
     dependencies:
-      '@sphereon/oid4vc-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/oid4vc-common': 0.16.1-feature.SDK.39.well.known.oidf.178
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       cross-fetch: 3.1.8(encoding@0.1.13)
       debug: 4.3.7(supports-color@5.5.0)
       jwt-decode: 4.0.0
@@ -13882,13 +13899,13 @@ snapshots:
       - encoding
       - supports-color
 
-  '@sphereon/oid4vci-issuer-server@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(@noble/hashes@1.2.0)(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)':
+  '@sphereon/oid4vci-issuer-server@0.16.1-feature.SDK.39.well.known.oidf.178(@noble/hashes@1.2.0)(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)':
     dependencies:
-      '@sphereon/oid4vc-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-      '@sphereon/oid4vci-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)
-      '@sphereon/oid4vci-issuer': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)
-      '@sphereon/ssi-express-support': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/oid4vc-common': 0.16.1-feature.SDK.39.well.known.oidf.178
+      '@sphereon/oid4vci-common': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)
+      '@sphereon/oid4vci-issuer': 0.16.1-feature.SDK.39.well.known.oidf.178(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)
+      '@sphereon/ssi-express-support': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       body-parser: 1.20.3
       cookie-parser: 1.4.7
       cors: 2.8.5
@@ -13905,11 +13922,11 @@ snapshots:
       - passport-http-bearer
       - supports-color
 
-  '@sphereon/oid4vci-issuer@0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)':
+  '@sphereon/oid4vci-issuer@0.16.1-feature.SDK.39.well.known.oidf.178(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)':
     dependencies:
-      '@sphereon/oid4vc-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
-      '@sphereon/oid4vci-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/oid4vc-common': 0.16.1-feature.SDK.39.well.known.oidf.178
+      '@sphereon/oid4vci-common': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       uuid: 9.0.1
     optionalDependencies:
       awesome-qr: 2.1.5-rc.0(encoding@0.1.13)
@@ -13926,7 +13943,7 @@ snapshots:
       '@sd-jwt/present': 0.7.2
       '@sd-jwt/types': 0.7.2
       '@sphereon/pex-models': 2.3.1
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       ajv: 8.17.1
       ajv-formats: 2.1.1(ajv@8.17.1)
       jwt-decode: 3.1.2
@@ -13936,7 +13953,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@sphereon/ssi-express-support@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)':
+  '@sphereon/ssi-express-support@0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)':
     dependencies:
       body-parser: 1.20.3
       casbin: 5.32.0
@@ -13963,7 +13980,7 @@ snapshots:
       '@ethersproject/random': 5.7.0
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@stablelib/ed25519': 1.0.3
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/did-manager': 4.2.0
@@ -14059,7 +14076,7 @@ snapshots:
 
   '@sphereon/ssi-sdk-ext.did-resolver-jwk@0.24.1-unstable.137':
     dependencies:
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       base64url: 3.0.1
       debug: 4.3.7(supports-color@5.5.0)
       did-resolver: 4.1.0
@@ -14091,8 +14108,8 @@ snapshots:
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
       '@sphereon/ssi-sdk-ext.x509-utils': 0.24.1-unstable.137
       '@sphereon/ssi-sdk.agent-config': 0.30.1(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@stablelib/ed25519': 1.0.3
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/utils': 4.2.0(encoding@0.1.13)
@@ -14127,7 +14144,7 @@ snapshots:
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
       '@sphereon/ssi-sdk-ext.x509-utils': 0.24.1-unstable.137
       '@sphereon/ssi-sdk.agent-config': 0.30.1(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/utils': 4.2.0(encoding@0.1.13)
       debug: 4.3.7(supports-color@5.5.0)
@@ -14160,7 +14177,7 @@ snapshots:
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
       '@sphereon/ssi-sdk-ext.x509-utils': 0.25.0
       '@sphereon/ssi-sdk.agent-config': 0.30.1(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/utils': 4.2.0(encoding@0.1.13)
       debug: 4.3.7(supports-color@5.5.0)
@@ -14195,7 +14212,7 @@ snapshots:
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
       '@sphereon/ssi-sdk-ext.x509-utils': 0.24.1-unstable.137
       '@sphereon/ssi-sdk.agent-config': 0.30.1(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@stablelib/random': 1.0.2
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/utils': 4.2.0(encoding@0.1.13)
@@ -14232,7 +14249,7 @@ snapshots:
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
       '@sphereon/ssi-sdk-ext.x509-utils': 0.25.0
       '@sphereon/ssi-sdk.agent-config': 0.30.1(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@stablelib/random': 1.0.2
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/utils': 4.2.0(encoding@0.1.13)
@@ -14281,7 +14298,7 @@ snapshots:
     dependencies:
       '@ethersproject/random': 5.7.0
       '@sphereon/ssi-sdk-ext.x509-utils': 0.24.1-unstable.137
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@stablelib/ed25519': 1.0.3
       '@stablelib/sha256': 1.0.1
       '@stablelib/sha512': 1.0.1
@@ -14411,7 +14428,7 @@ snapshots:
       - ts-node
       - typeorm-aurora-data-api-driver
 
-  '@sphereon/ssi-sdk.agent-config@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
+  '@sphereon/ssi-sdk.agent-config@0.30.2-feature.SDK.39.well.known.oidf.139(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
     dependencies:
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       debug: 4.3.7(supports-color@5.5.0)
@@ -14439,16 +14456,16 @@ snapshots:
       - ts-node
       - typeorm-aurora-data-api-driver
 
-  '@sphereon/ssi-sdk.contact-manager-rest-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
+  '@sphereon/ssi-sdk.contact-manager-rest-api@0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
     dependencies:
-      '@sphereon/ssi-express-support': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+      '@sphereon/ssi-express-support': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
       '@sphereon/ssi-sdk-ext.key-manager': 0.25.0
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
-      '@sphereon/ssi-sdk.contact-manager': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.contact-manager': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       body-parser: 1.20.3
       casbin: 5.32.0
@@ -14484,9 +14501,9 @@ snapshots:
       - ts-node
       - typeorm-aurora-data-api-driver
 
-  '@sphereon/ssi-sdk.contact-manager@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
+  '@sphereon/ssi-sdk.contact-manager@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
     dependencies:
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       cross-fetch: 3.1.8(encoding@0.1.13)
       debug: 4.3.7(supports-color@5.5.0)
       typeorm: 0.3.20(patch_hash=2ab6ifjhrjmslc3c6tsipqkncm)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
@@ -14511,9 +14528,9 @@ snapshots:
       - ts-node
       - typeorm-aurora-data-api-driver
 
-  '@sphereon/ssi-sdk.core@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)':
+  '@sphereon/ssi-sdk.core@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)':
     dependencies:
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       cross-fetch: 3.1.8(encoding@0.1.13)
       debug: 4.3.7(supports-color@5.5.0)
@@ -14523,11 +14540,11 @@ snapshots:
       - encoding
       - supports-color
 
-  '@sphereon/ssi-sdk.credential-store@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
+  '@sphereon/ssi-sdk.credential-store@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
     dependencies:
       '@sphereon/pex': 5.0.0-unstable.14
       '@sphereon/pex-models': 2.3.1
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       cross-fetch: 3.1.8(encoding@0.1.13)
       debug: 4.3.7(supports-color@5.5.0)
       typeorm: 0.3.20(patch_hash=2ab6ifjhrjmslc3c6tsipqkncm)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
@@ -14553,14 +14570,14 @@ snapshots:
       - ts-node
       - typeorm-aurora-data-api-driver
 
-  '@sphereon/ssi-sdk.credential-validation@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)':
+  '@sphereon/ssi-sdk.credential-validation@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)':
     dependencies:
       '@sphereon/kmp-mdl-mdoc': 0.2.0-SNAPSHOT.22
-      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.mdl-mdoc': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.sd-jwt': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.SDK.39.well.known.oidf.139(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.mdl-mdoc': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.sd-jwt': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/utils': 4.2.0(encoding@0.1.13)
       ajv: 8.17.1
@@ -14590,15 +14607,15 @@ snapshots:
       - typeorm-aurora-data-api-driver
       - typescript
 
-  '@sphereon/ssi-sdk.data-store@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
+  '@sphereon/ssi-sdk.data-store@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
     dependencies:
       '@sphereon/kmp-mdl-mdoc': 0.2.0-SNAPSHOT.22
       '@sphereon/pex': 5.0.0-unstable.14
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.SDK.39.well.known.oidf.139(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/utils': 4.2.0(encoding@0.1.13)
       blakejs: 1.2.1
@@ -14627,7 +14644,7 @@ snapshots:
       - ts-node
       - typeorm-aurora-data-api-driver
 
-  '@sphereon/ssi-sdk.dev@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@types/node@18.19.59)':
+  '@sphereon/ssi-sdk.dev@0.30.2-feature.SDK.39.well.known.oidf.139(@types/node@18.19.59)':
     dependencies:
       '@microsoft/api-extractor': 7.47.11(@types/node@18.19.59)
       '@microsoft/api-extractor-model': 7.29.8(@types/node@18.19.59)
@@ -14646,11 +14663,11 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@sphereon/ssi-sdk.ebsi-support@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
+  '@sphereon/ssi-sdk.ebsi-support@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
     dependencies:
       '@ethersproject/random': 5.7.0
-      '@sphereon/did-auth-siop': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
-      '@sphereon/did-auth-siop-adapter': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/did-auth-siop': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/did-auth-siop-adapter': 0.16.1-feature.SDK.39.well.known.oidf.176(encoding@0.1.13)(typescript@5.6.3)
       '@sphereon/pex': 5.0.0-unstable.14
       '@sphereon/pex-models': 2.3.1
       '@sphereon/ssi-sdk-ext.did-resolver-ebsi': 0.25.0(encoding@0.1.13)
@@ -14658,12 +14675,12 @@ snapshots:
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.jwt-service': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
-      '@sphereon/ssi-sdk.contact-manager': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.oid4vci-holder': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.presentation-exchange': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.siopv2-oid4vp-op-auth': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.contact-manager': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.oid4vci-holder': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.presentation-exchange': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.siopv2-oid4vp-op-auth': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/did-manager': 4.2.0
       '@veramo/utils': 4.2.0(encoding@0.1.13)
@@ -14704,10 +14721,10 @@ snapshots:
       - utf-8-validate
       - web-streams-polyfill
 
-  '@sphereon/ssi-sdk.event-logger@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
+  '@sphereon/ssi-sdk.event-logger@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
     dependencies:
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       uuid: 9.0.1
     transitivePeerDependencies:
       - '@google-cloud/spanner'
@@ -14730,10 +14747,10 @@ snapshots:
       - ts-node
       - typeorm-aurora-data-api-driver
 
-  '@sphereon/ssi-sdk.issuance-branding@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
+  '@sphereon/ssi-sdk.issuance-branding@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
     dependencies:
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       debug: 4.3.7(supports-color@5.5.0)
       typeorm: 0.3.20(patch_hash=2ab6ifjhrjmslc3c6tsipqkncm)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
     transitivePeerDependencies:
@@ -14757,7 +14774,7 @@ snapshots:
       - ts-node
       - typeorm-aurora-data-api-driver
 
-  '@sphereon/ssi-sdk.kv-store-temp@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
+  '@sphereon/ssi-sdk.kv-store-temp@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
     dependencies:
       '@veramo/utils': 4.2.0(encoding@0.1.13)
       debug: 4.3.7(supports-color@5.5.0)
@@ -14786,17 +14803,17 @@ snapshots:
       - ts-node
       - typeorm-aurora-data-api-driver
 
-  '@sphereon/ssi-sdk.mdl-mdoc@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)':
+  '@sphereon/ssi-sdk.mdl-mdoc@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)':
     dependencies:
-      '@sphereon/did-auth-siop': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/did-auth-siop': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)
       '@sphereon/kmp-mdl-mdoc': 0.2.0-SNAPSHOT.22
       '@sphereon/pex': 5.0.0-unstable.14
       '@sphereon/pex-models': 2.3.1
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
       '@sphereon/ssi-sdk-ext.x509-utils': 0.25.0
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/did-manager': 4.2.0
       '@veramo/utils': 4.2.0(encoding@0.1.13)
@@ -14829,25 +14846,25 @@ snapshots:
       - typeorm-aurora-data-api-driver
       - typescript
 
-  '@sphereon/ssi-sdk.oid4vci-holder@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)':
+  '@sphereon/ssi-sdk.oid4vci-holder@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)':
     dependencies:
       '@sphereon/kmp-mdl-mdoc': 0.2.0-SNAPSHOT.22
-      '@sphereon/oid4vci-client': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)
-      '@sphereon/oid4vci-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)
+      '@sphereon/oid4vci-client': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)
+      '@sphereon/oid4vci-common': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.jwt-service': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
-      '@sphereon/ssi-sdk.contact-manager': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.credential-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.credential-validation': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.issuance-branding': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.mdl-mdoc': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.sd-jwt': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.xstate-machine-persistence': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.contact-manager': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.credential-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.credential-validation': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.issuance-branding': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.mdl-mdoc': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.sd-jwt': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.xstate-machine-persistence': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/data-store': 4.2.0(patch_hash=feb5u2ygzsdf67qbxr2lxgqjyy)(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@veramo/utils': 4.2.0(encoding@0.1.13)
@@ -14879,17 +14896,17 @@ snapshots:
       - typeorm-aurora-data-api-driver
       - typescript
 
-  '@sphereon/ssi-sdk.oid4vci-issuer-rest-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
+  '@sphereon/ssi-sdk.oid4vci-issuer-rest-api@0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
     dependencies:
-      '@sphereon/oid4vci-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)
-      '@sphereon/oid4vci-issuer': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)
-      '@sphereon/oid4vci-issuer-server': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(@noble/hashes@1.2.0)(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
-      '@sphereon/ssi-express-support': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+      '@sphereon/oid4vci-common': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)
+      '@sphereon/oid4vci-issuer': 0.16.1-feature.SDK.39.well.known.oidf.178(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)
+      '@sphereon/oid4vci-issuer-server': 0.16.1-feature.SDK.39.well.known.oidf.178(@noble/hashes@1.2.0)(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+      '@sphereon/ssi-express-support': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.oid4vci-issuer': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-sdk.oid4vci-issuer-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.oid4vci-issuer': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-sdk.oid4vci-issuer-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/credential-w3c': 4.2.0(patch_hash=wuhizuafnrz3uzah2wlqaevbmi)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
       awesome-qr: 2.1.5-rc.0(encoding@0.1.13)
@@ -14930,22 +14947,22 @@ snapshots:
       - typescript
       - web-streams-polyfill
 
-  '@sphereon/ssi-sdk.oid4vci-issuer-rest-client@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)':
+  '@sphereon/ssi-sdk.oid4vci-issuer-rest-client@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)':
     dependencies:
-      '@sphereon/oid4vci-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/oid4vci-common': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       cross-fetch: 3.1.8(encoding@0.1.13)
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@sphereon/ssi-sdk.oid4vci-issuer-store@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)':
+  '@sphereon/ssi-sdk.oid4vci-issuer-store@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)':
     dependencies:
-      '@sphereon/oid4vci-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)
+      '@sphereon/oid4vci-common': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/credential-w3c': 4.2.0(patch_hash=wuhizuafnrz3uzah2wlqaevbmi)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
       cross-fetch: 3.1.8(encoding@0.1.13)
@@ -14975,21 +14992,21 @@ snapshots:
       - typeorm-aurora-data-api-driver
       - web-streams-polyfill
 
-  '@sphereon/ssi-sdk.oid4vci-issuer@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
+  '@sphereon/ssi-sdk.oid4vci-issuer@0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
     dependencies:
-      '@sphereon/oid4vci-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)
-      '@sphereon/oid4vci-issuer': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)
+      '@sphereon/oid4vci-common': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)
+      '@sphereon/oid4vci-issuer': 0.16.1-feature.SDK.39.well.known.oidf.178(awesome-qr@2.1.5-rc.0(encoding@0.1.13))(encoding@0.1.13)
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.mdl-mdoc': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.oid4vci-issuer-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-sdk.sd-jwt': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.vc-status-list': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-sdk.vc-status-list-issuer': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.SDK.39.well.known.oidf.139(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.mdl-mdoc': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.oid4vci-issuer-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-sdk.sd-jwt': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.vc-status-list': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-sdk.vc-status-list-issuer': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@types/uuid': 9.0.8
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/credential-w3c': 4.2.0(patch_hash=wuhizuafnrz3uzah2wlqaevbmi)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
@@ -15025,11 +15042,11 @@ snapshots:
       - typescript
       - web-streams-polyfill
 
-  '@sphereon/ssi-sdk.pd-manager@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
+  '@sphereon/ssi-sdk.pd-manager@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
     dependencies:
       '@sphereon/pex': 5.0.0-unstable.14
       '@sphereon/pex-models': 2.3.1
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       cross-fetch: 3.1.8(encoding@0.1.13)
       debug: 4.3.7(supports-color@5.5.0)
       semver: 7.6.3
@@ -15055,16 +15072,16 @@ snapshots:
       - ts-node
       - typeorm-aurora-data-api-driver
 
-  '@sphereon/ssi-sdk.presentation-exchange@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)':
+  '@sphereon/ssi-sdk.presentation-exchange@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)':
     dependencies:
       '@sphereon/pex': 5.0.0-unstable.14
       '@sphereon/pex-models': 2.3.1
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.credential-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.sd-jwt': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.credential-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.sd-jwt': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
     transitivePeerDependencies:
       - '@google-cloud/spanner'
@@ -15088,15 +15105,15 @@ snapshots:
       - typeorm-aurora-data-api-driver
       - typescript
 
-  '@sphereon/ssi-sdk.public-key-hosting@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
+  '@sphereon/ssi-sdk.public-key-hosting@0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
     dependencies:
-      '@sphereon/ssi-express-support': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+      '@sphereon/ssi-express-support': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.key-manager': 0.25.0
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
       '@sphereon/ssi-sdk-ext.kms-local': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/key-manager': 4.2.0
       '@veramo/kms-local': 4.2.0
@@ -15134,7 +15151,7 @@ snapshots:
       - ts-node
       - typeorm-aurora-data-api-driver
 
-  '@sphereon/ssi-sdk.qr-code-generator@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
+  '@sphereon/ssi-sdk.qr-code-generator@0.30.2-feature.SDK.39.well.known.oidf.139':
     dependencies:
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       base64url: 3.0.1
@@ -15143,9 +15160,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@sphereon/ssi-sdk.remote-server-rest-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)':
+  '@sphereon/ssi-sdk.remote-server-rest-api@0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)':
     dependencies:
-      '@sphereon/ssi-express-support': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+      '@sphereon/ssi-express-support': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/remote-server': 4.2.0(encoding@0.1.13)(express@4.21.1)
       express: 4.21.1
@@ -15156,7 +15173,7 @@ snapshots:
       - passport-http-bearer
       - supports-color
 
-  '@sphereon/ssi-sdk.sd-jwt@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)':
+  '@sphereon/ssi-sdk.sd-jwt@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)':
     dependencies:
       '@sd-jwt/core': 0.7.2
       '@sd-jwt/sd-jwt-vc': 0.7.2
@@ -15164,9 +15181,9 @@ snapshots:
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.jwt-service': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
-      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.mdl-mdoc': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.SDK.39.well.known.oidf.139(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.mdl-mdoc': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/utils': 4.2.0(encoding@0.1.13)
       debug: 4.3.7(supports-color@5.5.0)
       uint8arrays: 3.1.1
@@ -15193,39 +15210,39 @@ snapshots:
       - typeorm-aurora-data-api-driver
       - typescript
 
-  '@sphereon/ssi-sdk.siopv2-oid4vp-common@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(typescript@5.6.3)':
+  '@sphereon/ssi-sdk.siopv2-oid4vp-common@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(typescript@5.6.3)':
     dependencies:
-      '@sphereon/did-auth-siop': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/did-auth-siop': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       uint8arrays: 3.1.1
     transitivePeerDependencies:
       - encoding
       - supports-color
       - typescript
 
-  '@sphereon/ssi-sdk.siopv2-oid4vp-op-auth@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
+  '@sphereon/ssi-sdk.siopv2-oid4vp-op-auth@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
     dependencies:
-      '@sphereon/did-auth-siop': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
-      '@sphereon/did-auth-siop-adapter': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
-      '@sphereon/oid4vc-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
+      '@sphereon/did-auth-siop': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/did-auth-siop-adapter': 0.16.1-feature.SDK.39.well.known.oidf.176(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/oid4vc-common': 0.16.1-feature.SDK.39.well.known.oidf.178
       '@sphereon/pex': 5.0.0-unstable.14
       '@sphereon/pex-models': 2.3.1
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.jwt-service': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.contact-manager': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.credential-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.credential-validation': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.issuance-branding': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.pd-manager': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.presentation-exchange': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.sd-jwt': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.siopv2-oid4vp-common': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(typescript@5.6.3)
-      '@sphereon/ssi-sdk.xstate-machine-persistence': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.contact-manager': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.credential-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.credential-validation': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.issuance-branding': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.pd-manager': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.presentation-exchange': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.sd-jwt': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.siopv2-oid4vp-common': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/ssi-sdk.xstate-machine-persistence': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@sphereon/wellknown-dids-client': 0.1.3(encoding@0.1.13)
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/credential-w3c': 4.2.0(patch_hash=wuhizuafnrz3uzah2wlqaevbmi)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
@@ -15261,24 +15278,24 @@ snapshots:
       - typescript
       - web-streams-polyfill
 
-  '@sphereon/ssi-sdk.siopv2-oid4vp-rp-auth@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
+  '@sphereon/ssi-sdk.siopv2-oid4vp-rp-auth@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
     dependencies:
-      '@sphereon/did-auth-siop': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
-      '@sphereon/did-auth-siop-adapter': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
-      '@sphereon/oid4vc-common': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172
+      '@sphereon/did-auth-siop': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/did-auth-siop-adapter': 0.16.1-feature.SDK.39.well.known.oidf.176(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/oid4vc-common': 0.16.1-feature.SDK.39.well.known.oidf.178
       '@sphereon/pex': 5.0.0-unstable.14
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.jwt-service': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.credential-validation': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.mdl-mdoc': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.pd-manager': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.presentation-exchange': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.sd-jwt': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.siopv2-oid4vp-common': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(typescript@5.6.3)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.credential-validation': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.mdl-mdoc': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.pd-manager': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.presentation-exchange': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.sd-jwt': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.siopv2-oid4vp-common': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@sphereon/wellknown-dids-client': 0.1.3(encoding@0.1.13)
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/credential-w3c': 4.2.0(patch_hash=wuhizuafnrz3uzah2wlqaevbmi)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
@@ -15310,18 +15327,18 @@ snapshots:
       - typescript
       - web-streams-polyfill
 
-  '@sphereon/ssi-sdk.siopv2-oid4vp-rp-rest-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
+  '@sphereon/ssi-sdk.siopv2-oid4vp-rp-rest-api@0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
     dependencies:
-      '@sphereon/did-auth-siop': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
-      '@sphereon/ssi-express-support': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.credential-validation': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.pd-manager': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.presentation-exchange': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.siopv2-oid4vp-common': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(typescript@5.6.3)
-      '@sphereon/ssi-sdk.siopv2-oid4vp-rp-auth': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/did-auth-siop': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/ssi-express-support': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.credential-validation': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.pd-manager': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.presentation-exchange': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.siopv2-oid4vp-common': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/ssi-sdk.siopv2-oid4vp-rp-auth': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/credential-w3c': 4.2.0(patch_hash=wuhizuafnrz3uzah2wlqaevbmi)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
       body-parser: 1.20.3
@@ -15361,14 +15378,14 @@ snapshots:
       - typescript
       - web-streams-polyfill
 
-  '@sphereon/ssi-sdk.uni-resolver-registrar-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
+  '@sphereon/ssi-sdk.uni-resolver-registrar-api@0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
     dependencies:
-      '@sphereon/ssi-express-support': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+      '@sphereon/ssi-express-support': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.key-manager': 0.25.0
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       body-parser: 1.20.3
       casbin: 5.32.0
@@ -15404,7 +15421,7 @@ snapshots:
       - ts-node
       - typeorm-aurora-data-api-driver
 
-  '@sphereon/ssi-sdk.vc-handler-ld-local@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native-securerandom@1.0.1(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1)))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)':
+  '@sphereon/ssi-sdk.vc-handler-ld-local@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native-securerandom@1.0.1(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1)))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)':
     dependencies:
       '@digitalcredentials/ed25519-signature-2020': 3.0.2(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
       '@digitalcredentials/ed25519-verification-key-2020': 4.0.0
@@ -15416,11 +15433,11 @@ snapshots:
       '@noble/hashes': 1.2.0
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.key-utils': 0.24.1-unstable.137
-      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.vc-status-list': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.SDK.39.well.known.oidf.139(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.vc-status-list': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@transmute/credentials-context': 0.7.0-unstable.82
       '@transmute/ed25519-key-pair': 0.7.0-unstable.81
       '@transmute/ed25519-signature-2018': 0.7.0-unstable.82(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
@@ -15469,16 +15486,16 @@ snapshots:
       - typeorm-aurora-data-api-driver
       - web-streams-polyfill
 
-  '@sphereon/ssi-sdk.vc-status-list-issuer-drivers@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)':
+  '@sphereon/ssi-sdk.vc-status-list-issuer-drivers@0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)':
     dependencies:
-      '@sphereon/ssi-express-support': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+      '@sphereon/ssi-express-support': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.vc-status-list': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.SDK.39.well.known.oidf.139(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.vc-status-list': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@sphereon/vc-status-list': 7.0.0-next.0(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       debug: 4.3.7(supports-color@5.5.0)
@@ -15512,60 +15529,16 @@ snapshots:
       - typeorm-aurora-data-api-driver
       - web-streams-polyfill
 
-  '@sphereon/ssi-sdk.vc-status-list-issuer-rest-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)':
+  '@sphereon/ssi-sdk.vc-status-list-issuer-rest-api@0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)':
     dependencies:
-      '@sphereon/ssi-express-support': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+      '@sphereon/ssi-express-support': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.vc-status-list': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-sdk.vc-status-list-issuer-drivers': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
-      '@sphereon/vc-status-list': 7.0.0-next.0(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
-      '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
-      debug: 4.3.7(supports-color@5.5.0)
-      express: 4.21.1
-      reflect-metadata: 0.1.14
-      typeorm: 0.3.20(patch_hash=2ab6ifjhrjmslc3c6tsipqkncm)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      uint8arrays: 3.1.1
-      uuid: 9.0.1
-    transitivePeerDependencies:
-      - '@google-cloud/spanner'
-      - '@noble/hashes'
-      - '@sap/hana-client'
-      - better-sqlite3
-      - domexception
-      - encoding
-      - expo
-      - hdb-pool
-      - ioredis
-      - mongodb
-      - mssql
-      - mysql2
-      - oracledb
-      - passport-azure-ad
-      - passport-http-bearer
-      - pg
-      - pg-native
-      - pg-query-stream
-      - react-native
-      - redis
-      - sql.js
-      - sqlite3
-      - supports-color
-      - ts-node
-      - typeorm-aurora-data-api-driver
-      - web-streams-polyfill
-
-  '@sphereon/ssi-sdk.vc-status-list-issuer@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)':
-    dependencies:
-      '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.vc-status-list': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-sdk.vc-status-list-issuer-drivers': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.vc-status-list': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-sdk.vc-status-list-issuer-drivers': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@sphereon/vc-status-list': 7.0.0-next.0(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       debug: 4.3.7(supports-color@5.5.0)
@@ -15602,11 +15575,55 @@ snapshots:
       - typeorm-aurora-data-api-driver
       - web-streams-polyfill
 
-  '@sphereon/ssi-sdk.vc-status-list@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)':
+  '@sphereon/ssi-sdk.vc-status-list-issuer@0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)':
     dependencies:
       '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.vc-status-list': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-sdk.vc-status-list-issuer-drivers': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
+      '@sphereon/vc-status-list': 7.0.0-next.0(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
+      '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
+      debug: 4.3.7(supports-color@5.5.0)
+      express: 4.21.1
+      reflect-metadata: 0.1.14
+      typeorm: 0.3.20(patch_hash=2ab6ifjhrjmslc3c6tsipqkncm)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      uint8arrays: 3.1.1
+      uuid: 9.0.1
+    transitivePeerDependencies:
+      - '@google-cloud/spanner'
+      - '@noble/hashes'
+      - '@sap/hana-client'
+      - better-sqlite3
+      - domexception
+      - encoding
+      - expo
+      - hdb-pool
+      - ioredis
+      - mongodb
+      - mssql
+      - mysql2
+      - oracledb
+      - passport-azure-ad
+      - passport-http-bearer
+      - pg
+      - pg-native
+      - pg-query-stream
+      - react-native
+      - redis
+      - sql.js
+      - sqlite3
+      - supports-color
+      - ts-node
+      - typeorm-aurora-data-api-driver
+      - web-streams-polyfill
+
+  '@sphereon/ssi-sdk.vc-status-list@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)':
+    dependencies:
+      '@sphereon/ssi-sdk-ext.did-utils': 0.24.1-unstable.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk-ext.identifier-resolution': 0.25.0(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@sphereon/vc-status-list': 7.0.0-next.0(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/credential-status': 4.2.0(encoding@0.1.13)
@@ -15639,10 +15656,10 @@ snapshots:
       - typeorm-aurora-data-api-driver
       - web-streams-polyfill
 
-  '@sphereon/ssi-sdk.w3c-vc-api-issuer-rest-client@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@types/node@18.19.59)(encoding@0.1.13)':
+  '@sphereon/ssi-sdk.w3c-vc-api-issuer-rest-client@0.30.2-feature.SDK.39.well.known.oidf.139(@types/node@18.19.59)(encoding@0.1.13)':
     dependencies:
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.dev': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@types/node@18.19.59)
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.dev': 0.30.2-feature.SDK.39.well.known.oidf.139(@types/node@18.19.59)
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       cross-fetch: 3.1.8(encoding@0.1.13)
     transitivePeerDependencies:
@@ -15650,18 +15667,18 @@ snapshots:
       - encoding
       - supports-color
 
-  '@sphereon/ssi-sdk.w3c-vc-api@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
+  '@sphereon/ssi-sdk.w3c-vc-api@0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)(web-streams-polyfill@3.3.3)':
     dependencies:
-      '@sphereon/did-auth-siop': 0.16.1-feature.sdk.38.rfc8414.auth.server.metadata.172(encoding@0.1.13)(typescript@5.6.3)
-      '@sphereon/ssi-express-support': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
-      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.credential-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-sdk.presentation-exchange': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
-      '@sphereon/ssi-sdk.vc-status-list': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-sdk.vc-status-list-issuer': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/did-auth-siop': 0.16.1-feature.SDK.39.well.known.oidf.178(encoding@0.1.13)(typescript@5.6.3)
+      '@sphereon/ssi-express-support': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+      '@sphereon/ssi-sdk.agent-config': 0.30.2-feature.SDK.39.well.known.oidf.139(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.credential-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.kv-store-temp': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.presentation-exchange': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
+      '@sphereon/ssi-sdk.vc-status-list': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-sdk.vc-status-list-issuer': 0.30.2-feature.SDK.39.well.known.oidf.139(@noble/hashes@1.2.0)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)(pg@8.13.0)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(web-streams-polyfill@3.3.3)
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/credential-w3c': 4.2.0(patch_hash=wuhizuafnrz3uzah2wlqaevbmi)(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
       body-parser: 1.20.3
@@ -15703,9 +15720,9 @@ snapshots:
       - typescript
       - web-streams-polyfill
 
-  '@sphereon/ssi-sdk.xstate-machine-persistence@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
+  '@sphereon/ssi-sdk.xstate-machine-persistence@0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
     dependencies:
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       debug: 4.3.7(supports-color@5.5.0)
       uuid: 9.0.1
@@ -15731,7 +15748,7 @@ snapshots:
       - ts-node
       - typeorm-aurora-data-api-driver
 
-  '@sphereon/ssi-types@0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137':
+  '@sphereon/ssi-types@0.30.2-feature.SDK.39.well.known.oidf.139':
     dependencies:
       '@sd-jwt/decode': 0.7.2
       '@sphereon/kmp-mdl-mdoc': 0.2.0-SNAPSHOT.22
@@ -15752,9 +15769,9 @@ snapshots:
 
   '@sphereon/ui-components.credential-branding@0.3.1-next.6(encoding@0.1.13)(pg@8.13.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))':
     dependencies:
-      '@sphereon/ssi-sdk.core': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-sdk.core': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       '@sphereon/ui-components.core': 0.3.1-next.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/utils': 4.2.0(encoding@0.1.13)
@@ -15796,7 +15813,7 @@ snapshots:
       '@mui/styled-engine-sc': 5.14.12(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@mui/system': 5.16.7(@emotion/react@11.13.3(@types/react@18.3.12)(react@18.3.1))(@emotion/styled@11.13.0(@emotion/react@11.13.3(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react@18.3.1)
       '@mui/x-date-pickers': 6.20.2(@emotion/react@11.13.3(@types/react@18.3.12)(react@18.3.1))(@emotion/styled@11.13.0(@emotion/react@11.13.3(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react@18.3.1))(@mui/material@5.16.7(@emotion/react@11.13.3(@types/react@18.3.12)(react@18.3.1))(@emotion/styled@11.13.0(@emotion/react@11.13.3(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@mui/system@5.16.7(@emotion/react@11.13.3(@types/react@18.3.12)(react@18.3.1))(@emotion/styled@11.13.0(@emotion/react@11.13.3(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(date-fns@2.30.0)(dayjs@1.11.13)(moment@2.30.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
+      '@sphereon/ssi-sdk.data-store': 0.30.2-feature.SDK.39.well.known.oidf.139(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))
       '@sphereon/ui-components.core': 0.3.1-next.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-table': 8.20.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
@@ -15852,7 +15869,7 @@ snapshots:
 
   '@sphereon/wellknown-dids-client@0.1.3(encoding@0.1.13)':
     dependencies:
-      '@sphereon/ssi-types': 0.30.2-feature.sdk.38.rfc8414.auth.server.metadata.137
+      '@sphereon/ssi-types': 0.30.2-feature.SDK.39.well.known.oidf.139
       cross-fetch: 3.1.8(encoding@0.1.13)
       jwt-decode: 3.1.2
     transitivePeerDependencies:
