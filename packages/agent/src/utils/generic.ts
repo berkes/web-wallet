@@ -23,14 +23,18 @@ export function loadJsonFiles<T>({ path }: { path: string }): {
   const asArray: T[] = []
 
   fileNames.forEach((fileName: string) => {
-    let typeName = fileName.match(/(^.*?)\.json/)
-    if (typeName) {
-      const name = typeName[1]
-      names.push(name)
-      files.push(fileName)
-      const object = JSON.parse(fs.readFileSync(`${path}/${fileName}`, 'utf8').toString()) as T
-      asObject[name] = object
-      asArray.push(object)
+    try {
+      let typeName = fileName.match(/(^.*?)\.json/)
+      if (typeName) {
+        const name = typeName[1]
+        names.push(name)
+        files.push(fileName)
+        const object = JSON.parse(fs.readFileSync(`${path}/${fileName}`, 'utf8').toString()) as T
+        asObject[name] = object
+        asArray.push(object)
+      }
+    } catch (e) {
+      throw Error(`${(e as Error).message} for file ${path}/${fileName}`, {cause: e})
     }
   })
   return { names, fileNames: files, asObject, asArray }
