@@ -30,7 +30,7 @@ import {
   AUTHENTICATION_STRATEGY,
   AUTHORIZATION_ENABLED,
   AUTHORIZATION_GLOBAL_REQUIRE_USER_IN_ROLES,
-  DB_CONNECTION_NAME, 
+  DB_CONNECTION_NAME,
   DB_DATABASE_NAME,
   DB_ENCRYPTION_KEY,
   DEFAULT_MODE,
@@ -39,6 +39,7 @@ import {
   DID_API_RESOLVE_MODE,
   INTERNAL_PORT,
   IS_CONTACT_MANAGER_ENABLED,
+  IS_FEDERATION_ENABLED,
   IS_JWKS_HOSTING_ENABLED,
   IS_OID4VCI_ENABLED,
   IS_OID4VP_ENABLED,
@@ -67,7 +68,12 @@ import {
   PDStore,
 } from '@sphereon/ssi-sdk.data-store'
 import {IIssuerInstanceArgs, OID4VCIIssuer} from '@sphereon/ssi-sdk.oid4vci-issuer'
-import {IIssuerInstanceOptions, IIssuerOptsPersistArgs, OID4VCIStore} from '@sphereon/ssi-sdk.oid4vci-issuer-store'
+import {
+  IIssuerInstanceOptions,
+  IIssuerOptsPersistArgs,
+  IMetadataImportArgs,
+  OID4VCIStore,
+} from '@sphereon/ssi-sdk.oid4vci-issuer-store'
 import {IOID4VCIRestAPIOpts, IRequiredContext, OID4VCIRestAPI} from '@sphereon/ssi-sdk.oid4vci-issuer-rest-api'
 import {EventLogger} from '@sphereon/ssi-sdk.event-logger'
 import {RemoteServerApiServer} from '@sphereon/ssi-sdk.remote-server-rest-api'
@@ -92,6 +98,7 @@ import {
   DID_WEB_SERVICE_FEATURES,
   oid4vciInstanceOpts,
   oid4vciMetadataOpts,
+  oid4vpMetadataOpts,
   REMOTE_SERVER_API_FEATURES,
   STATUS_LIST_API_FEATURES,
   syncDefinitionsOpts,
@@ -108,6 +115,7 @@ import {DataSources} from '@sphereon/ssi-sdk.agent-config'
 import {StatusListPlugin} from '@sphereon/ssi-sdk.vc-status-list-issuer/dist/agent/StatusListPlugin'
 import {getOrCreateConfiguredStatusList} from './utils/statuslist'
 import {CredentialValidation} from '@sphereon/ssi-sdk.credential-validation'
+import {OIDFMetadataServer, OIDFMetadataStore} from '@sphereon/ssi-sdk.oidf-metatdata-server'
 
 /**
  * Lets setup supported DID resolvers first
@@ -186,7 +194,7 @@ const plugins: IAgentPlugin[] = [
       dataSource: dbConnection,
     }], defaultInstanceId: STATUS_LIST_ID, allDataSources: DataSources.singleInstance(),
   }),
-  new CredentialValidation()
+  new CredentialValidation(),
 ]
 
 let oid4vpRP: SIOPv2RP | undefined
@@ -196,7 +204,7 @@ if (!cliMode) {
     plugins.push(
       new OID4VCIStore({
         importIssuerOpts: oid4vciInstanceOpts.asArray,
-        importMetadatas: oid4vciMetadataOpts.asArray,
+        importMetadatas: oid4vciMetadataOpts.asArray as Array<IMetadataImportArgs>, // with method parameters like for oidfStoreImportMetadatas, TypeScript is being more lenient. Here we need to cast to the discriminator base interface
       }),
     )
     plugins.push(
@@ -208,10 +216,14 @@ if (!cliMode) {
     )
   }
 
-  oid4vpRP = IS_OID4VP_ENABLED ? await createOID4VPRP({ resolver }) : undefined
-  if (oid4vpRP) {
+  if (IS_OID4VP_ENABLED) {
+    oid4vpRP = await createOID4VPRP({resolver})
     plugins.push(oid4vpRP)
     plugins.push(new PresentationExchange())
+  }
+  
+  if(IS_FEDERATION_ENABLED) {
+    plugins.push(new OIDFMetadataStore())
   }
 }
 
@@ -471,6 +483,17 @@ if (!cliMode) {
     )
   }
 
+  if(IS_FEDERATION_ENABLED) {
+    if(oid4vciMetadataOpts) {
+      await context.agent.oidfStoreImportMetadatas(oid4vciMetadataOpts.asArray)
+    }
+    if(oid4vpMetadataOpts) {
+      await context.agent.oidfStoreImportMetadatas(oid4vpMetadataOpts.asArray)
+    }
+    
+    void OIDFMetadataServer.init({context, expressSupport})
+  }
+  
   if (IS_JWKS_HOSTING_ENABLED) {
     new PublicKeyHosting({ agent, expressSupport, opts: { hostingOpts: { enableFeatures: ['did-jwks', 'all-jwks'] } } })
   }

@@ -26,6 +26,7 @@ import { IJwtService } from '@sphereon/ssi-sdk-ext.jwt-service'
 import { ImDLMdoc } from '@sphereon/ssi-sdk.mdl-mdoc'
 import {IStatusListPlugin} from '@sphereon/ssi-sdk.vc-status-list'
 import {ICredentialValidation} from '@sphereon/ssi-sdk.credential-validation'
+import {IOIDFMetadataStore} from '@sphereon/ssi-sdk.oidf-metatdata-server'
 
 export const DID_PREFIX = 'did'
 
@@ -53,7 +54,8 @@ export type TAgentTypes = IDIDManager &
   ISIOPv2RP &
   ImDLMdoc &
   ICredentialValidation &
-  IStatusListPlugin
+  IStatusListPlugin &
+  IOIDFMetadataStore
 
 /**
  * The Key Management System (name) to use. Currently, there is only one KMS
