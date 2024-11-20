@@ -460,7 +460,7 @@ if (!cliMode) {
       },
     })
   }
-
+  
   if (IS_OID4VCI_ENABLED) {
     oid4vciInstanceOpts.asArray.map(async (opts) =>
       issuerPersistToInstanceOpts(opts).then(async (instanceOpt) => {

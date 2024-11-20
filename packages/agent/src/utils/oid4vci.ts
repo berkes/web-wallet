@@ -61,7 +61,7 @@ export async function addDefaultsToOpts(issuerOpts: IIssuerOptions) {
       },
     }
   }
-  if (!issuerOpts.didOpts?.resolveOpts) {
+  if (issuerOpts.didOpts && !issuerOpts.didOpts?.resolveOpts) {
     issuerOpts.didOpts!.resolveOpts = resolveOpts
   }
   return issuerOpts
