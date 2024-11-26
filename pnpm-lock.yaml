@@ -239,6 +239,9 @@ importers:
       '@sphereon/ssi-sdk.remote-server-rest-api':
         specifier: 0.30.2-fix.367
         version: 0.30.2-fix.367(@noble/hashes@1.2.0)(encoding@0.1.13)(passport-azure-ad@4.3.5)(passport-http-bearer@1.0.1)
+      '@sphereon/ssi-sdk.sd-jwt':
+        specifier: 0.30.2-fix.367
+        version: 0.30.2-fix.367(encoding@0.1.13)(pg@8.13.0)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@18.19.59)(typescript@5.6.3))(typescript@5.6.3)
       '@sphereon/ssi-sdk.siopv2-oid4vp-common':
         specifier: 0.30.2-fix.367
         version: 0.30.2-fix.367(encoding@0.1.13)(typescript@5.6.3)
@@ -653,7 +656,7 @@ importers:
         version: 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/did-provider-key':
         specifier: 4.2.0
-        version: 4.2.0(encoding@0.1.13)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
+        version: 4.2.0(encoding@0.1.13)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))
       '@veramo/did-resolver':
         specifier: 4.2.0
         version: 4.2.0(encoding@0.1.13)
@@ -3176,6 +3179,7 @@ packages:
 
   '@sphereon/kmp-mdl-mdoc@0.2.0-SNAPSHOT.22':
     resolution: {integrity: sha512-uAZZExVy+ug9JLircejWa5eLtAZ7bnBP6xb7DO2+86LRsHNLh2k2jMWJYxp+iWtGHTsh6RYsZl14ScQLvjiQ/A==}
+    bundledDependencies: []
 
   '@sphereon/oid4vc-common@0.16.1-feature.SDK.39.well.known.oidf.222':
     resolution: {integrity: sha512-CRcYn0TRYcLCHdYv46pOJddIOgkfPTm+IHtJE5hp1ew070SI7VokzFIs095NqIFT1uULZHaD6csEvz9r6cMDPw==}
@@ -16776,7 +16780,7 @@ snapshots:
       - react-native
       - web-streams-polyfill
 
-  '@transmute/did-key-secp256k1@0.3.0-unstable.10(encoding@0.1.13)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)':
+  '@transmute/did-key-secp256k1@0.3.0-unstable.10(encoding@0.1.13)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))':
     dependencies:
       '@transmute/did-key-common': 0.3.0-unstable.10(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
       '@transmute/secp256k1-key-pair': 0.7.0-unstable.82
@@ -16798,7 +16802,7 @@ snapshots:
       bs58: 4.0.1
       canonicalize: 1.0.8
 
-  '@transmute/did-key-x25519@0.3.0-unstable.10(encoding@0.1.13)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)':
+  '@transmute/did-key-x25519@0.3.0-unstable.10(encoding@0.1.13)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))':
     dependencies:
       '@transmute/did-key-common': 0.3.0-unstable.10(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
       '@transmute/x25519-key-pair': 0.7.0-unstable.82
@@ -17563,11 +17567,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@veramo/did-provider-key@4.2.0(encoding@0.1.13)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)':
+  '@veramo/did-provider-key@4.2.0(encoding@0.1.13)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))':
     dependencies:
       '@transmute/did-key-ed25519': 0.3.0-unstable.10(encoding@0.1.13)(expo@51.0.38(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(encoding@0.1.13))(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
-      '@transmute/did-key-secp256k1': 0.3.0-unstable.10(encoding@0.1.13)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
-      '@transmute/did-key-x25519': 0.3.0-unstable.10(encoding@0.1.13)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(web-streams-polyfill@3.3.3)
+      '@transmute/did-key-secp256k1': 0.3.0-unstable.10(encoding@0.1.13)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))
+      '@transmute/did-key-x25519': 0.3.0-unstable.10(encoding@0.1.13)(react-native@0.76.0(@babel/core@7.25.9)(@babel/preset-env@7.25.9(@babel/core@7.25.9))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))
       '@veramo/core': 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
       '@veramo/did-manager': 4.2.0
       debug: 4.3.7(supports-color@5.5.0)
