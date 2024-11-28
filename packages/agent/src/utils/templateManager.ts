@@ -50,6 +50,15 @@ export class TemplateVCGenerator {
     this.handlebars.registerHelper('dateTimeAfterYears', (years: number) => {
       return format(add(new Date(), { years }), this.timeFormatPattern)
     })
+    this.handlebars.registerHelper('timestampAfterDays', (days: number) => {
+      return Math.floor(add(new Date(), { days }).getMilliseconds() / 1000 + 10 * 365 * 24 * 60 * 60)
+    })
+    this.handlebars.registerHelper('timestampAfterMonths', (months: number) => {
+      return Math.floor(add(new Date(), { months }).getMilliseconds() / 1000 + 10 * 365 * 24 * 60 * 60)
+    })
+    this.handlebars.registerHelper('timestampAfterYears', (years: number) => {
+      return Math.floor(add(new Date(), { years }).getMilliseconds() / 1000 + 10 * 365 * 24 * 60 * 60)
+    })
     this.handlebars.registerHelper('toJSON', (obj) => JSON.stringify(obj))
     this.handlebars.registerHelper('mergeJSON', (obj) => {
       const jsonText = JSON.stringify(obj)
