@@ -51,13 +51,13 @@ export class TemplateVCGenerator {
       return format(add(new Date(), { years }), this.timeFormatPattern)
     })
     this.handlebars.registerHelper('timestampAfterDays', (days: number) => {
-      return Math.floor(add(new Date(), { days }).getMilliseconds() / 1000)
+      return Math.floor(add(new Date(), { days }).getTime() / 1000)
     })
     this.handlebars.registerHelper('timestampAfterMonths', (months: number) => {
-      return Math.floor(add(new Date(), { months }).getMilliseconds() / 1000)
+      return Math.floor(add(new Date(), { months }).getTime() / 1000)
     })
     this.handlebars.registerHelper('timestampAfterYears', (years: number) => {
-      return Math.floor(add(new Date(), { years }).getMilliseconds() / 1000)
+      return Math.floor(add(new Date(), { years }).getTime() / 1000)
     })
     this.handlebars.registerHelper('toJSON', (obj) => JSON.stringify(obj))
     this.handlebars.registerHelper('mergeJSON', (obj) => {
