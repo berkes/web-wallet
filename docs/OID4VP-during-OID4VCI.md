@@ -10,6 +10,8 @@ It is leveraging the Authorization code flow to improve the user experience with
 
 The flow is described below, focusing only on the key components relevant to this process:
 
+![sequence diagram](./images/oid4vp-during-oid4vci.png)
+
 ```plantuml
 
 @startuml
