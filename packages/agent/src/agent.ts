@@ -79,7 +79,7 @@ import {EventLogger} from '@sphereon/ssi-sdk.event-logger'
 import {RemoteServerApiServer} from '@sphereon/ssi-sdk.remote-server-rest-api'
 import {IssuanceBranding} from '@sphereon/ssi-sdk.issuance-branding'
 import {PDManager} from '@sphereon/ssi-sdk.pd-manager'
-import {LoggingEventType, StatusListDriverType} from '@sphereon/ssi-types'
+import {DcqlQuery, LoggingEventType, StatusListDriverType} from '@sphereon/ssi-types'
 import {createOID4VPRP, getDefaultOID4VPRPOptions} from './utils/oid4vp'
 import {IPresentationDefinition} from '@sphereon/pex'
 import {PresentationExchange} from '@sphereon/ssi-sdk.presentation-exchange'
@@ -91,7 +91,7 @@ import {EbsiSupport} from '@sphereon/ssi-sdk.ebsi-support'
 import {OID4VCIHolder} from '@sphereon/ssi-sdk.oid4vci-holder'
 import {addDefaultsToOpts} from './utils/oid4vci'
 import {getCredentialDataSupplier} from './utils/oid4vciCredentialSuppliers'
-import {SIOPv2RP} from '@sphereon/ssi-sdk.siopv2-oid4vp-rp-auth'
+import {IDefinitionPair, SIOPv2RP} from '@sphereon/ssi-sdk.siopv2-oid4vp-rp-auth'
 import {
   CONTACT_MANAGER_API_FEATURES,
   DID_API_FEATURES,
@@ -464,14 +464,15 @@ if (!cliMode) {
   if (IS_OID4VCI_ENABLED) {
     oid4vciInstanceOpts.asArray.map(async (opts) =>
       issuerPersistToInstanceOpts(opts).then(async (instanceOpt) => {
+        const credentialIssuer = opts.correlationId.startsWith('http') ? opts.correlationId : OID4VCI_API_BASE_URL
         void OID4VCIRestAPI.init({
           opts: {
-            baseUrl: OID4VCI_API_BASE_URL,
+            baseUrl: credentialIssuer,
             endpointOpts: {},
           } as IOID4VCIRestAPIOpts,
           context: context as unknown as IRequiredContext,
           issuerInstanceArgs: {
-            credentialIssuer: OID4VCI_API_BASE_URL,
+            credentialIssuer: credentialIssuer,
             storeId: '_default', // TODO configurable?
             namespace: 'oid4vci', // TODO configurable?
           } as IIssuerInstanceArgs,
@@ -531,15 +532,36 @@ if (!cliMode) {
   }
 
 
-  // Import presentation definitions from disk.
-  const definitionsToImport: Array<IPresentationDefinition> = syncDefinitionsOpts.asArray.filter((definition) => {
-    const { id, name } = definition ?? {}
-    if (definition && (OID4VP_DEFINITIONS.length === 0 || OID4VP_DEFINITIONS.includes(id) || (name && OID4VP_DEFINITIONS.includes(name)))) {
-      console.log(`[OID4VP] Enabling Presentation Definition with name '${name ?? '<none>'}' and id '${id}'`)
-      return true
-    }
-    return false
-  })
+  // Import presentation definitions from disk, get base filenames without .dcql
+  const baseNames = Object.keys(syncDefinitionsOpts).filter(name => !name.endsWith('.dcql'))
+
+  const definitionsToImport: Array<IDefinitionPair> = baseNames
+    .map(baseName => {
+      const definition = syncDefinitionsOpts[baseName]
+      if (!isPresentationDefinition(definition)) {
+        return null
+      }
+
+      const { id, name } = definition
+      if (OID4VP_DEFINITIONS.length === 0 || OID4VP_DEFINITIONS.includes(id) || (name && OID4VP_DEFINITIONS.includes(name))) {
+        console.log(`[OID4VP] Enabling Presentation Definition with name '${name ?? '<none>'}' and id '${id}'`)
+
+        const pair: IDefinitionPair = {
+          definitionPayload: definition,
+          dcqlPayload: undefined
+        }
+
+        const dcqlContent = syncDefinitionsOpts[`${baseName}.dcql`]
+        if (isDcqlQuery(dcqlContent)) {
+          pair.dcqlPayload = dcqlContent
+        }
+
+        return pair
+      }
+      return null
+    })
+    .filter((pair): pair is IDefinitionPair => pair !== null)
+
   if (definitionsToImport.length > 0) {
     await agent.siopImportDefinitions({
       definitions: definitionsToImport,
@@ -560,4 +582,12 @@ export async function issuerPersistToInstanceOpts(opt: IIssuerOptsPersistArgs): 
     storeId: opt.storeId,
     storeNamespace: opt.namespace,
   }
+}
+
+function isPresentationDefinition(obj: any): obj is IPresentationDefinition {
+  return obj && Array.isArray(obj.input_descriptors)
+}
+
+function isDcqlQuery(obj: any): obj is DcqlQuery {
+  return obj && Array.isArray(obj.credentials)
 }

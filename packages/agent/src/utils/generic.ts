@@ -1,5 +1,6 @@
 import * as fs from 'fs'
 
+
 /**
  * Loads one or more JSON files from a path.
  *
@@ -39,6 +40,37 @@ export function loadJsonFiles<T>({ path }: { path: string }): {
   })
   return { names, fileNames: files, asObject, asArray }
 }
+
+
+/**
+ * Loads one or more JSON files from a path into a map.
+ *
+ * @param path The path to search for files with .json extension
+ */
+export function loadJsonFileMap<T>({path}: {path: string}): Record<string, T> {
+  if (!fs.existsSync(path)) {
+    console.log(`WARN: Path ${path} does not exist. Will not load json files`)
+    return {}
+  }
+
+  const fileMap: Record<string, T> = {}
+  const fileNames = fs.readdirSync(path).filter(file => file.match(/\.json$/))
+
+  fileNames.forEach(fileName => {
+    try {
+      const match = fileName.match(/^(.*?)\.json$/)
+      if (match) {
+        const baseName = match[1]
+        fileMap[baseName] = JSON.parse(fs.readFileSync(`${path}/${fileName}`, 'utf8')) as T
+      }
+    } catch (e) {
+      throw Error(`${(e as Error).message} for file ${path}/${fileName}`, {cause: e})
+    }
+  })
+
+  return fileMap
+}
+
 
 /**
  * The function builds a file path without missing or excess slashes
