@@ -9,9 +9,10 @@
 
 The OpenID4VCI issuer is used in issuer type applications, where an organization is issuing the credential(s).
 
-We support 3 levels of integration. From more higher level in the agent exposing REST APIs, where things like key management are integrated into a
+We support 3 levels of integration, ranging from higher-level integration in the agent exposing REST APIs, where aspects like key management are
+integrated into a
 Veramo or Sphereon agent, to a standalone REST API, where you will have to integrate the key management yourself, to low level functionality to issue
-credentials using issuer methods.
+credentials using issuer-specific methods.
 
 # REST APIs
 
@@ -19,14 +20,15 @@ credentials using issuer methods.
 
 Please see the below payload descriptions to create a credential offer. Both pre-authorized code grants as well as authorization-code grants are
 supported.
-You provide these in the `credential_offer` payload. You also have to provide the `credential_issuer`. The reason is that the agent can support
+You provide these in the `credential_offer` payload. Additionally, you need to include the `credential_issuer`, as the agent can support
 multiple issuers at the same time.
-
+multiple credential issuers simultaneously.
 The default Create (POST) endpoint is enabled at:
 https://agent/webapp/credential-offers. It then would result in a new offer created at https://agent/webapp/credential-offers/:unique-id as returned
 in the create response.
-The path is configurable when creating the issuer. By default all "admin" endpoint can be found under the path "/webapp". These endpoints should be
-IP/network protected typically, as well as authentication should be enabled for them. If not anyone would be able to create a session!
+The path is configurable when creating the issuer. By default, all "admin" endpoints can be found under the path "/webapp". These endpoints should be
+
+typically IP/network protected, with authentication enabled. Without these, anyone would be able to create a session!
 
 The create credential offer request follows the below interface and needs to be provided in the body of the POST request to the URL above.
 
@@ -115,15 +117,15 @@ cannot skip both.
 
 Whenever a pre-authorized_code is being used, it is assumed that the Credential Issuer is creating the offer in an environment where the user/holder
 has already authenticated somehow. We advice to use Transaction/PIN codes to prevent session hijacking to a certain extend, as that is very easy to
-accomplish in a cross-device context where QR code are being used and where the assumption is that the user was already authenticated.
+accomplish in a cross-device context where QR codes are used, assuming the user has already been authenticated.
 Please be aware that the current agent does not support Authorization Code yet unfortunately. We expect to add that support soon.
 
-Although you can provide an optional authorization_server, currently only the built-in authorization server can be used. Once we added support for
+Although you can provide an optional authorization_server, currently only the built-in authorization server can be used. Once we add support for
 external authorization servers and authorization code support on the issuer side, you will be able to use this.
 
-Although it is technically possible to re-use the same pre-authorization_code for multiple offers, we would not advice it and suggest to always create
+Although it is technically possible to reuse the same pre-authorization_code for multiple offers, we do not advise this and recommend always creating
 a unique code per offer. Reason is that the issuer has an internal state where it keeps track of the progress. This for instance can be used by the
-status endpoint, to have a web-app/frontend application track progress and notify a user.
+a unique code per offer. The reason is that the issuer maintains an internal state to track progress. This can, for instance, be used by the
 
 ```typescript
 export interface Grant {
@@ -215,11 +217,16 @@ export interface TxCode {
 
 ### Credential data supplier
 
-The credential data supplier allows you to supply data during creation of the credential offer. This data is then stored in the session, and will be
-re-used once the credential is issued.
-Sometimes you might not know the input data yet at this point, or you want to make sure that the wallet actually is able to get to the issuance stage
-of the process. That is why soon there will also be support using a web-hook, that is called during the issuance phase. The webhook will get most
-session data and then is expected to conform to the data supplier interface as well. Providing all the input data for the credential.
+The credential data supplier allows you to provide data during the creation of the credential offer. This data is then stored in the session and will
+be
+
+reused when the credential is issued.
+
+Sometimes you may be unsure of the input data at this point, or you want to ensure that the wallet can reach the credential issuance stage
+
+of the process. This is why support for using a webhook, invoked during the issuance phase, will soon be available. The webhook will receive most
+
+session data and is expected to conform to the data supplier interface, providing all the input data for the credential.
 
 ### Resulting credential offer response
 
@@ -412,7 +419,8 @@ export interface QRCodeOpts {
 
 ### Example create credential offer request and response
 
-Create offer example request. This example uses an optional template configured on the issuer, to convert the keys into a JSON-LD credential object
+Example request to create an offer. This example uses an optional template configured on the issuer to convert the keys into a JSON-LD credential
+object.
 
 ```json
 {
@@ -451,7 +459,7 @@ Credential offer response:
 }
 ```
 
-## Track credential issuance status (session)
+You can track the status of credential issuance using the following endpoint:
 
 You can track the status of the credential issuance, using the following endpoint:
 https://agent/webapp/credential-offer-status
@@ -507,12 +515,13 @@ export interface IssueStatusResponse {
 ## Notifications and endpoint
 
 The notification endpoint can be enabled or disabled. If enabled a value needs to be exposed in the issuer metadata as well. This signals wallets that
-support notifications to use the endpoints.
+support notifications to interact with the endpoints.
 Notifications can be used for notifying the issuer about errors, but also for status feedback once the credential is issued to the wallet. From the
 perspective of the issuer the credential is issued, as a signed credential has been send to the wallet. However the holder typically has a manual user
-interface step where they can choose to accept or decline the credential. Without the notification endpoint the issuer will have no insight into what
+Notifications can be used to inform the issuer about errors and provide status feedback once the credential has been issued to the wallet. From the
 happened in that particular step. If enabled you are not guaranteed to get notifications, as a wallet is not required to implement it, or could opt to
-allow the user to decide to use notifications or not (as it has some privacy implications)
+issuer's perspective, the credential is considered issued as a signed credential has been sent to the wallet. However, the holder typically has a
+manual user
 
 Notification interface. See also [the OID4VCI spec](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html#section-9.1)
 
