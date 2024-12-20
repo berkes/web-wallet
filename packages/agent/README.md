@@ -42,8 +42,9 @@ are compatible with the W3C VC API, DIF Universal Resolver, DIF Universal Regist
 Verifiable Credentials, StatusList 2021.
 
 Some more information can be found in the [SSI-SDK Github](https://github.com/Sphereon-Opensource/ssi-sdk).
-The [DID documentation](../../docs/DID-API.md) and [VC API documentation]() is also available in the docs folder in the
-root of this project
+The [DID documentation](../../docs/DID-API.md) and [VC API documentation]() is also available in the [docs](../../docs) folder of this project.
+Extended [OID4VCI documentation](../../docs/OID4VCI.md) can also be found there,
+including [presentation during issuance](../../docs/OID4VP-during-OID4VCI.md).
 
 # DID import from configuration
 
@@ -170,7 +171,10 @@ Example body:
       "https://ref.sphereon.com/sphereon/vc/license-context/"
     ],
     "id": "http://localhost/vc/license/company_prefix/8790171",
-    "type": ["VerifiableCredential", "SPHEREONCompanyPrefixLicenseCredential"],
+    "type": [
+      "VerifiableCredential",
+      "SPHEREONCompanyPrefixLicenseCredential"
+    ],
     "issuer": "did:jwk:eyJhbGciOiJFZERTQSIsInVzZSI6InNpZyIsImt0eSI6Ik9LUCIsImNydiI6IkVkMjU1MTkiLCJ4IjoiaWFSbUhrUnJSa0FUSmFPTk95QllMUjNTZC10RWlqR0JBU3BuRzNyaFdEYyJ9",
     "issuanceDate": "2023-06-22T00:00:00Z",
     "validUntil": "2024-06-22T00:00:00Z",
@@ -207,7 +211,10 @@ Response:
       "https://w3id.org/security/suites/jws-2020/v1"
     ],
     "id": "http://localhost/vc/license/company_prefix/8790171",
-    "type": ["VerifiableCredential", "SPHEREONCompanyPrefixLicenseCredential"],
+    "type": [
+      "VerifiableCredential",
+      "SPHEREONCompanyPrefixLicenseCredential"
+    ],
     "issuer": "did:jwk:eyJhbGciOiJFZERTQSIsInVzZSI6InNpZyIsImt0eSI6Ik9LUCIsImNydiI6IkVkMjU1MTkiLCJ4IjoiaWFSbUhrUnJSa0FUSmFPTk95QllMUjNTZC10RWlqR0JBU3BuRzNyaFdEYyJ9",
     "issuanceDate": "2023-06-22T00:00:00Z",
     "validUntil": "2024-06-22T00:00:00Z",
@@ -266,7 +273,10 @@ Example verification body:
       "https://w3id.org/security/suites/jws-2020/v1"
     ],
     "id": "http://localhost/vc/license/company_prefix/8790171",
-    "type": ["VerifiableCredential", "SPHEREONCompanyPrefixLicenseCredential"],
+    "type": [
+      "VerifiableCredential",
+      "SPHEREONCompanyPrefixLicenseCredential"
+    ],
     "issuer": "did:jwk:eyJhbGciOiJFZERTQSIsInVzZSI6InNpZyIsImt0eSI6Ik9LUCIsImNydiI6IkVkMjU1MTkiLCJ4IjoiaWFSbUhrUnJSa0FUSmFPTk95QllMUjNTZC10RWlqR0JBU3BuRzNyaFdEYyJ9",
     "issuanceDate": "2023-06-22T00:00:00Z",
     "validUntil": "2024-06-22T00:00:00Z",
@@ -501,7 +511,10 @@ The response:
       ],
       "id": "http://localhost:5000/vc/status-lists/1",
       "issuer": "did:jwk:eyJhbGciOiJFZERTQSIsInVzZSI6InNpZyIsImt0eSI6Ik9LUCIsImNydiI6IkVkMjU1MTkiLCJ4IjoiaWFSbUhrUnJSa0FUSmFPTk95QllMUjNTZC10RWlqR0JBU3BuRzNyaFdEYyJ9",
-      "type": ["VerifiableCredential", "StatusList2021Credential"],
+      "type": [
+        "VerifiableCredential",
+        "StatusList2021Credential"
+      ],
       "credentialSubject": {
         "id": "http://localhost:5000/vc/status-lists/1",
         "type": "StatusList2021",
@@ -741,7 +754,9 @@ Response example:
     "assertionMethod": [
       "did:web:verification.sphereon.com:did:party_gln:12345678#02925110021f5d53468136ad4bf2233596bc8ee22f07c4b37548a346d643fcb73d"
     ],
-    "authentication": ["did:web:verification.sphereon.com:did:party_gln:12345678#02925110021f5d53468136ad4bf2233596bc8ee22f07c4b37548a346d643fcb73d"]
+    "authentication": [
+      "did:web:verification.sphereon.com:did:party_gln:12345678#02925110021f5d53468136ad4bf2233596bc8ee22f07c4b37548a346d643fcb73d"
+    ]
   },
   "didResolutionMetadata": {},
   "didDocumentMetadata": {
@@ -793,8 +808,12 @@ If a DID is found it will return the DID Document (not a resolution result)
       "type": "JsonWebKey2020"
     }
   ],
-  "assertionMethod": ["did:web:verification.sphereon.com:did:party_gln:12345678#02925110021f5d53468136ad4bf2233596bc8ee22f07c4b37548a346d643fcb73d"],
-  "authentication": ["did:web:verification.sphereon.com:did:party_gln:12345678#02925110021f5d53468136ad4bf2233596bc8ee22f07c4b37548a346d643fcb73d"]
+  "assertionMethod": [
+    "did:web:verification.sphereon.com:did:party_gln:12345678#02925110021f5d53468136ad4bf2233596bc8ee22f07c4b37548a346d643fcb73d"
+  ],
+  "authentication": [
+    "did:web:verification.sphereon.com:did:party_gln:12345678#02925110021f5d53468136ad4bf2233596bc8ee22f07c4b37548a346d643fcb73d"
+  ]
 }
 ```
 
