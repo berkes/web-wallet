@@ -206,7 +206,9 @@ export async function getOrCreateIdentifiersFromFS(): Promise<IIdentifierConfigR
       const did = identifierConfig.did
       try {
         identifier = did ? await context.agent.identifierManagedGetByDid({ identifier: did, offlineWhenNoDIDRegistered: true }) : undefined
-      } catch (error) {}
+      } catch (error) {
+        console.log(error)
+      }
 
       if (identifier) {
         console.log(`Identifier exists for DID ${did}`)

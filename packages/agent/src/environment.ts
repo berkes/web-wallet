@@ -66,6 +66,9 @@ export const VC_API_DEFAULT_PROOF_FORMAT = env('VC_API_DEFAULT_PROOF_FORMAT', EN
 export const IS_CONTACT_MANAGER_ENABLED = toBoolean(process.env.CONTACT_MANAGER_ENABLED, true)
 
 export const IS_JWKS_HOSTING_ENABLED = toBoolean(process.env.JWKS_HOSTING_ENABLED, true)
+export const IS_STATUS_LIST_ENABLED = toBoolean(process.env.IS_STATUS_LIST_ENABLED, true)
+export const IS_FEDERATION_ENABLED = toBoolean(process.env.IS_FEDERATION_ENABLED, true)
+
 
 export const STATUS_LIST_API_BASE_PATH = env('STATUS_LIST_API_BASE_PATH', ENV_VAR_PREFIX) ?? VC_API_BASE_PATH
 export const STATUS_LIST_ISSUER = env('STATUS_LIST_ISSUER', ENV_VAR_PREFIX) ?? DEFAULT_DID
@@ -101,3 +104,4 @@ export const OID4VP_DEFINITIONS: string[] = process.env.OID4VP_DEFINITIONS
   : []
 export const OID4VP_PRESENTATION_DEFINITION_PATH = `${CONF_PATH}/presentation_definitions`
 export const OID4VP_RP_OPTIONS_PATH = `${CONF_PATH}/oid4vp_options`
+export const OID4VP_RP_METADATA_PATH = `${CONF_PATH}/oid4vp_metadata`

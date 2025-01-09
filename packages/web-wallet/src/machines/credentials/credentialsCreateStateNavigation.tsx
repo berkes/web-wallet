@@ -1,9 +1,9 @@
 import React, {createContext, useCallback, useContext, useEffect, useState} from 'react'
 import {CredentialFormData, CredentialFormSelectionType, ValueSelection} from '@sphereon/ui-components.ssi-react'
 import {useNavigate, useOutletContext} from 'react-router-dom'
-import {IssueCredentialRoute, IssueMethod} from '@typings'
-import {UIContextType} from '@typings'
+import {IssueCredentialRoute, IssueMethod, UIContextType} from '@typings'
 import {useTranslate} from '@refinedev/core'
+import {JsonSchema} from '@jsonforms/core'
 
 export type CredentialsCreateContextType = UIContextType & {
   credentialType?: CredentialFormSelectionType
@@ -12,7 +12,9 @@ export type CredentialsCreateContextType = UIContextType & {
   onCredentialFormDataChange: (credentialFormData: CredentialFormData) => Promise<void>
   onIssueCredential: () => Promise<void>
   showCredentialQRCodeModal: boolean
+  showCredentialWalletUrlModal: boolean
   onCloseCredentialQRCodeModal: () => Promise<void>
+  onCloseCredentialWalletUrlModal: () => Promise<void>
   onIssueMethodChange: (issueMethod: ValueSelection) => Promise<void>
   issueMethod: ValueSelection
   issueMethods: Array<ValueSelection>
@@ -35,6 +37,39 @@ const issueCredentialNavigationListener = async (step: number, navigate: any): P
   }
 }
 
+const syncConstValues = (credentialFormData: CredentialFormData) => {
+  if(!credentialFormData.errors || credentialFormData.errors.length === 0) {
+    return
+  }
+  
+  const parentSchema = credentialFormData.errors[0].parentSchema as JsonSchema
+  if (parentSchema.properties) {
+    updateProperties(parentSchema.properties, credentialFormData.data)
+  }
+}
+
+const updateProperties = (
+  properties: Record<string, JsonSchema>,
+  data: Record<string, any>,
+) => {
+  if (!data) {
+    return
+  }
+  
+  Object.entries(properties).forEach(([key, property]) => {
+    if (property.const && (!(key in data) || !data[key])) {
+      data[key] = property.const
+    }
+
+    if (property.properties) {
+      if (!data[key]) {
+        data[key] = {}
+      }
+      updateProperties(property.properties, data[key])
+    }
+  })
+}
+
 export const CredentialsCreateContextProvider = (props: any): JSX.Element => {
   const {children} = props
   const translate = useTranslate()
@@ -44,10 +79,15 @@ export const CredentialsCreateContextProvider = (props: any): JSX.Element => {
   const [credentialType, setCredentialType] = useState<CredentialFormSelectionType | undefined>()
   const [credentialFormData, setCredentialFormData] = useState<CredentialFormData | undefined>()
   const [showCredentialQRCodeModal, setShowCredentialQRCodeModal] = useState<boolean>(false)
+  const [showCredentialWalletUrlModal, setShowCredentialWalletUrlModal] = useState<boolean>(false)
   const issueMethods: Array<ValueSelection> = [
     {
       label: translate('credential_issuance_method_qr_code_label'),
       value: IssueMethod.QR_CODE,
+    },
+    {
+      label: translate('credential_issuance_method_wallet_url_label'),
+      value: IssueMethod.WALLET_URL,
     },
   ]
   const [issueMethod, setIssueMethod] = useState<ValueSelection>(issueMethods[0])
@@ -74,7 +114,11 @@ export const CredentialsCreateContextProvider = (props: any): JSX.Element => {
 
   useEffect((): void => {
     if (step === 1) {
-      setDisabled(credentialFormData?.errors !== undefined && credentialFormData?.errors.length !== 0)
+      const disabled = credentialFormData?.errors !== undefined && credentialFormData?.errors.length !== 0
+      setDisabled(disabled)
+      if (disabled) {
+        console.warn(credentialFormData.errors)
+      }
     } else if (step === 2) {
       setDisabled(issueMethod === undefined)
     } else {
@@ -89,7 +133,7 @@ export const CredentialsCreateContextProvider = (props: any): JSX.Element => {
     } else {
       void onIssueCredential()
     }
-  }, [step])
+  }, [step, issueMethod])
 
   const onBack = useCallback(async (): Promise<void> => {
     const nextStep: number = step - maxAutoSteps
@@ -103,8 +147,19 @@ export const CredentialsCreateContextProvider = (props: any): JSX.Element => {
     setStep(1)
   }
 
+  const onCloseCredentialWalletUrlModal = async (): Promise<void> => {
+    setShowCredentialWalletUrlModal(false)
+    setStep(1)
+  }
+
   const onOpenCredentialQRCodeModal = async (): Promise<void> => {
     setShowCredentialQRCodeModal(true)
+    setShowCredentialWalletUrlModal(false)
+  }
+
+  const onOpenCredentialWalletUrlModal = async (): Promise<void> => {
+    setShowCredentialQRCodeModal(false)
+    setShowCredentialWalletUrlModal(true)
   }
 
   const onSelectCredentialTypeChange = async (credentialType: CredentialFormSelectionType): Promise<void> => {
@@ -112,6 +167,9 @@ export const CredentialsCreateContextProvider = (props: any): JSX.Element => {
   }
 
   const onCredentialFormDataChange = async (credentialFormData: CredentialFormData): Promise<void> => {
+    if (credentialFormData?.errors) {
+      syncConstValues(credentialFormData)
+    }
     setCredentialFormData(credentialFormData)
   }
 
@@ -123,6 +181,8 @@ export const CredentialsCreateContextProvider = (props: any): JSX.Element => {
     switch (issueMethod.value) {
       case IssueMethod.QR_CODE:
         return onOpenCredentialQRCodeModal()
+      case IssueMethod.WALLET_URL:
+        return onOpenCredentialWalletUrlModal()
       default:
         return Promise.reject(Error(`Issuance type ${issueMethod.value} not supported`))
     }
@@ -146,7 +206,9 @@ export const CredentialsCreateContextProvider = (props: any): JSX.Element => {
         onCredentialFormDataChange,
         onIssueCredential,
         onCloseCredentialQRCodeModal,
+        onCloseCredentialWalletUrlModal,
         showCredentialQRCodeModal,
+        showCredentialWalletUrlModal,
         onIssueMethodChange,
         issueMethod,
         issueMethods,

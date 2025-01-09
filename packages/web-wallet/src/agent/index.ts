@@ -19,7 +19,7 @@ import {pdManagerMethods} from '@sphereon/ssi-sdk.pd-manager'
 import {getResolver as getDidWebResolver} from 'web-did-resolver'
 import {oid4vciStateNavigationListener} from '@machines/oid4vci/oid4vciStateNavigation'
 import {AuthorizationRequestOpts, PARMode} from '@sphereon/oid4vci-common'
-import {CLIENT_ID, OID4VCI_CODE_URL_REGEX, OID4VCI_DEFAULT_REDIRECT_URI, SIOP_DEFAULT_REDIRECT_URI} from '@/app'
+import {CLIENT_ID, OID4VCI_CODE_URL_REGEX, OID4VCI_DEFAULT_REDIRECT_URI} from '@/app'
 import {TAgentTypes} from '@typings'
 import {DidAuthSiopOpAuthenticator, OID4VPCallbackStateListener, Siopv2OID4VPLinkHandler} from '@sphereon/ssi-sdk.siopv2-oid4vp-op-auth'
 import {vpStateCallbacks} from '@machines/siopv2/siopv2StateNavigation'
@@ -29,6 +29,7 @@ import {IdentifierResolution, identifierResolutionContextMethods} from '@sphereo
 import {SDJwtPlugin, sdJwtPluginContextMethods} from '@sphereon/ssi-sdk.sd-jwt'
 import {JwtService, jwtServiceContextMethods} from '@sphereon/ssi-sdk-ext.jwt-service'
 import {generateDigest, generateSalt, verifySDJWTSignature} from '@helpers/CryptoUtils'
+import {credentialValidationMethods} from '@sphereon/ssi-sdk.credential-validation'
 
 export const resolver = new Resolver({
   ...getDidKeyResolver(),
@@ -72,6 +73,7 @@ const plugins: IAgentPlugin[] = [
       ...sdJwtPluginContextMethods,
       ...jwtServiceContextMethods,
       ...identifierResolutionContextMethods,
+      ...credentialValidationMethods,
 
       'createSdJwtVc',
       'createSdJwtPresentation',

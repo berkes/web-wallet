@@ -1,7 +1,7 @@
 FROM node:20.12.1-bullseye
 SHELL ["/bin/bash", "-c"]
 WORKDIR /opt/wallet/frontend
-RUN npm -g install pnpm@8 && SHELL=bash pnpm setup && source /root/.bashrc && pnpm add -g pnpm@8
+RUN npm -g install pnpm@9 && SHELL=bash pnpm setup && source /root/.bashrc && pnpm add -g pnpm@8
 RUN pnpm add typescript tslib
 
 COPY packages packages

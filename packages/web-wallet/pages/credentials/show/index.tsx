@@ -22,6 +22,7 @@ import agent from '@agent'
 import {CredentialSummary, toCredentialSummary} from '@sphereon/ui-components.credential-branding'
 import {DigitalCredential} from '@sphereon/ssi-sdk.credential-store'
 import {VerifiableCredential} from '@veramo/core'
+import {CredentialMapper} from '@sphereon/ssi-types'
 
 enum CredentialDetailsTabRoute {
   INFO = 'info',
