@@ -77,7 +77,7 @@ const ShowContactDetails: FC = (): ReactElement => {
           const localeBranding: Array<IBasicCredentialLocaleBranding> = await Promise.all(
               (credentialsConfigSupported.display ?? []).map(
                   async (display: CredentialsSupportedDisplay): Promise<IBasicCredentialLocaleBranding> =>
-                      await agent.ibCredentialLocaleBrandingFrom({ localeBranding: await credentialLocaleBrandingFrom(display) }),
+                      await agent.ibCredentialLocaleBrandingFrom({ localeBranding: await credentialLocaleBrandingFrom({credentialDisplay: display}) }),
               ),
           )
 
