@@ -28,6 +28,7 @@ const toBoolean = (value: string | undefined, defaultValue?: boolean): boolean =
  * so the rest of the code doesn't have to know the exact environment values
  */
 export const ENV_VAR_PREFIX = process.env.ENV_VAR_PREFIX ?? ''
+export const DB_TYPE = process.env.DB_TYPE ?? (() => { throw new Error('DB_TYPE is required') })();
 export const DB_URL = env('DB_URL', ENV_VAR_PREFIX) // Using DB_URL is optional
 export const DB_HOST = env('DB_HOST', ENV_VAR_PREFIX)
 export const DB_PORT = env('DB_PORT', ENV_VAR_PREFIX)
@@ -41,28 +42,6 @@ export const DB_CONNECTION_NAME = env('DB_CONNECTION_NAME', ENV_VAR_PREFIX) ?? '
 export const DB_DATABASE_NAME = env('DB_DATABASE_NAME', ENV_VAR_PREFIX) ?? 'web-wallet-agent'
 export const DB_CACHE_ENABLED = env('DB_CACHE_ENABLED', ENV_VAR_PREFIX) ?? 'true'
 export const DB_ENCRYPTION_KEY = env('DB_ENCRYPTION_KEY', ENV_VAR_PREFIX) ?? '29739248cad1bd1a0fc4d9b75cd4d2990de535baf5caadfdf8d8f86664aa830c'
-
-let dbType = env('DB_TYPE', ENV_VAR_PREFIX)
-if (!dbType) {
-    if (DB_URL) {
-        if (DB_URL.includes('sqlite')) {
-            dbType = 'sqlite'
-        } else if (DB_URL.startsWith('http') || DB_URL.startsWith('postgres')) {
-            dbType = 'postgres'
-        } else {
-            dbType = 'postgres'
-        }
-    }
-}
-if (!dbType) {
-    if (DB_HOST || DB_PORT) {
-        dbType = 'postgres'
-    }
-} else if (dbType.toLowerCase().includes('postgres')) {
-    dbType = 'postgres'
-}
-export const DB_TYPE = dbType ?? 'postgres'
-process.env[`${ENV_VAR_PREFIX}${DB_TYPE}`] = DB_TYPE // make sure we sync back in case we did not have it above
 
 export const INTERNAL_HOSTNAME_OR_IP = env('INTERNAL_HOSTNAME_OR_IP', ENV_VAR_PREFIX) ?? env('HOSTNAME', ENV_VAR_PREFIX) ?? '0.0.0.0'
 export const INTERNAL_PORT = env('PORT', ENV_VAR_PREFIX) ? Number.parseInt(env('PORT', ENV_VAR_PREFIX)!) : 5000
